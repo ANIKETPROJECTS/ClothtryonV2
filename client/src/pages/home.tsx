@@ -180,7 +180,7 @@ export default function HomePage() {
               <div className="flex h-8 w-8 items-center justify-center rounded-md bg-primary">
                 <Camera className="h-4 w-4 text-primary-foreground" />
               </div>
-              <span className="text-lg font-bold">VTRYON</span>
+              <span className="text-lg font-bold">ONYU</span>
             </div>
             <div className="flex gap-8 text-sm text-muted-foreground">
               <a href="#" className="hover:text-foreground">Size Guide</a>
@@ -189,7 +189,7 @@ export default function HomePage() {
               <a href="#" className="hover:text-foreground">Terms</a>
             </div>
             <p className="text-sm text-muted-foreground">
-              {new Date().getFullYear()} VTRYON. All rights reserved.
+              {new Date().getFullYear()} ONYU. All rights reserved.
             </p>
           </div>
         </div>

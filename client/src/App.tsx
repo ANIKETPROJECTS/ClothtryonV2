@@ -30,7 +30,7 @@ function Router() {
 function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <ThemeProvider defaultTheme="light" storageKey="vtryon-theme">
+      <ThemeProvider defaultTheme="light" storageKey="ONYU-theme">
         <CartProvider>
           <TooltipProvider>
             <div className="min-h-screen bg-background">
