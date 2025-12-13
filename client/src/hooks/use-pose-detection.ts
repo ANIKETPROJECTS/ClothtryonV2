@@ -1,9 +1,20 @@
 import { useRef, useEffect, useState, useCallback } from "react";
+import * as tf from "@tensorflow/tfjs";
+import * as poseDetection from "@tensorflow-models/pose-detection";
 import type { PoseKeypoints, SizeRecommendation, SizeChart, SizeKey } from "@shared/schema";
 
 interface UsePoseDetectionOptions {
   onPoseDetected?: (keypoints: PoseKeypoints) => void;
   sizeChart?: SizeChart;
+}
+
+interface BodyBounds {
+  x: number;
+  y: number;
+  width: number;
+  height: number;
+  shoulderY: number;
+  hipY: number;
 }
 
 interface PoseDetectionResult {
@@ -13,6 +24,7 @@ interface PoseDetectionResult {
   isTracking: boolean;
   error: string | null;
   keypoints: PoseKeypoints | null;
+  bodyBounds: BodyBounds | null;
   sizeRecommendation: SizeRecommendation | null;
   startCamera: () => Promise<void>;
   stopCamera: () => void;
@@ -32,11 +44,13 @@ export function usePoseDetection(options: UsePoseDetectionOptions = {}): PoseDet
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const streamRef = useRef<MediaStream | null>(null);
   const animationRef = useRef<number | null>(null);
+  const detectorRef = useRef<poseDetection.PoseDetector | null>(null);
   
   const [isLoading, setIsLoading] = useState(false);
   const [isTracking, setIsTracking] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [keypoints, setKeypoints] = useState<PoseKeypoints | null>(null);
+  const [bodyBounds, setBodyBounds] = useState<BodyBounds | null>(null);
   const [sizeRecommendation, setSizeRecommendation] = useState<SizeRecommendation | null>(null);
 
   const calculateSizeRecommendation = useCallback(
@@ -73,89 +87,131 @@ export function usePoseDetection(options: UsePoseDetectionOptions = {}): PoseDet
     [sizeChart]
   );
 
-  const simulatePoseDetection = useCallback(() => {
-    if (!videoRef.current || !canvasRef.current) return;
+  const initializeDetector = useCallback(async () => {
+    await tf.ready();
+    await tf.setBackend("webgl");
+    
+    const model = poseDetection.SupportedModels.MoveNet;
+    const detectorConfig: poseDetection.MoveNetModelConfig = {
+      modelType: poseDetection.movenet.modelType.SINGLEPOSE_LIGHTNING,
+      enableSmoothing: true,
+    };
+    
+    detectorRef.current = await poseDetection.createDetector(model, detectorConfig);
+  }, []);
+
+  const runPoseDetection = useCallback(async () => {
+    if (!videoRef.current || !canvasRef.current || !detectorRef.current) return;
 
     const video = videoRef.current;
     const canvas = canvasRef.current;
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
 
+    if (video.readyState < 2) {
+      animationRef.current = requestAnimationFrame(runPoseDetection);
+      return;
+    }
+
     canvas.width = video.videoWidth || 640;
     canvas.height = video.videoHeight || 480;
 
-    ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    const centerX = canvas.width / 2;
-    const centerY = canvas.height / 2;
-    const shoulderOffset = canvas.width * 0.15;
-    const hipOffset = canvas.width * 0.12;
-    const bodyHeight = canvas.height * 0.25;
+    try {
+      const poses = await detectorRef.current.estimatePoses(video);
+      
+      if (poses.length > 0 && poses[0].keypoints) {
+        const kp = poses[0].keypoints;
+        
+        const getKeypoint = (name: string) => {
+          const point = kp.find((p) => p.name === name);
+          return point ? { 
+            x: point.x / canvas.width, 
+            y: point.y / canvas.height, 
+            visibility: point.score || 0 
+          } : { x: 0.5, y: 0.5, visibility: 0 };
+        };
 
-    const time = Date.now() * 0.001;
-    const breathOffset = Math.sin(time * 2) * 3;
+        const leftShoulder = getKeypoint("left_shoulder");
+        const rightShoulder = getKeypoint("right_shoulder");
+        const leftHip = getKeypoint("left_hip");
+        const rightHip = getKeypoint("right_hip");
 
-    const simulatedKeypoints: PoseKeypoints = {
-      leftShoulder: {
-        x: (centerX - shoulderOffset) / canvas.width,
-        y: (centerY - bodyHeight * 0.3 + breathOffset) / canvas.height,
-        visibility: 0.95,
-      },
-      rightShoulder: {
-        x: (centerX + shoulderOffset) / canvas.width,
-        y: (centerY - bodyHeight * 0.3 + breathOffset) / canvas.height,
-        visibility: 0.95,
-      },
-      leftHip: {
-        x: (centerX - hipOffset) / canvas.width,
-        y: (centerY + bodyHeight * 0.5) / canvas.height,
-        visibility: 0.9,
-      },
-      rightHip: {
-        x: (centerX + hipOffset) / canvas.width,
-        y: (centerY + bodyHeight * 0.5) / canvas.height,
-        visibility: 0.9,
-      },
-    };
+        const minVisibility = 0.3;
+        if (
+          leftShoulder.visibility > minVisibility &&
+          rightShoulder.visibility > minVisibility &&
+          leftHip.visibility > minVisibility &&
+          rightHip.visibility > minVisibility
+        ) {
+          const detectedKeypoints: PoseKeypoints = {
+            leftShoulder,
+            rightShoulder,
+            leftHip,
+            rightHip,
+          };
 
-    setKeypoints(simulatedKeypoints);
-    
-    const recommendation = calculateSizeRecommendation(simulatedKeypoints);
-    setSizeRecommendation(recommendation);
+          setKeypoints(detectedKeypoints);
+          
+          const recommendation = calculateSizeRecommendation(detectedKeypoints);
+          setSizeRecommendation(recommendation);
 
-    ctx.fillStyle = "rgba(59, 130, 246, 0.8)";
-    const pointRadius = 6;
-    
-    Object.values(simulatedKeypoints).forEach((point) => {
-      ctx.beginPath();
-      ctx.arc(point.x * canvas.width, point.y * canvas.height, pointRadius, 0, Math.PI * 2);
-      ctx.fill();
-    });
+          const shoulderWidth = Math.abs(rightShoulder.x - leftShoulder.x) * canvas.width;
+          const shoulderCenterX = ((leftShoulder.x + rightShoulder.x) / 2) * canvas.width;
+          const shoulderY = ((leftShoulder.y + rightShoulder.y) / 2) * canvas.height;
+          const hipY = ((leftHip.y + rightHip.y) / 2) * canvas.height;
+          const torsoHeight = hipY - shoulderY;
 
-    ctx.strokeStyle = "rgba(59, 130, 246, 0.6)";
-    ctx.lineWidth = 2;
-    
-    ctx.beginPath();
-    ctx.moveTo(simulatedKeypoints.leftShoulder.x * canvas.width, simulatedKeypoints.leftShoulder.y * canvas.height);
-    ctx.lineTo(simulatedKeypoints.rightShoulder.x * canvas.width, simulatedKeypoints.rightShoulder.y * canvas.height);
-    ctx.stroke();
+          const padding = shoulderWidth * 0.3;
+          const bounds: BodyBounds = {
+            x: shoulderCenterX - shoulderWidth / 2 - padding,
+            y: shoulderY - padding * 0.5,
+            width: shoulderWidth + padding * 2,
+            height: torsoHeight + padding * 1.5,
+            shoulderY: shoulderY,
+            hipY: hipY,
+          };
+          setBodyBounds(bounds);
 
-    ctx.beginPath();
-    ctx.moveTo(simulatedKeypoints.leftHip.x * canvas.width, simulatedKeypoints.leftHip.y * canvas.height);
-    ctx.lineTo(simulatedKeypoints.rightHip.x * canvas.width, simulatedKeypoints.rightHip.y * canvas.height);
-    ctx.stroke();
+          ctx.fillStyle = "rgba(34, 197, 94, 0.8)";
+          const pointRadius = 8;
+          
+          [leftShoulder, rightShoulder, leftHip, rightHip].forEach((point) => {
+            ctx.beginPath();
+            ctx.arc(point.x * canvas.width, point.y * canvas.height, pointRadius, 0, Math.PI * 2);
+            ctx.fill();
+          });
 
-    ctx.beginPath();
-    ctx.moveTo(simulatedKeypoints.leftShoulder.x * canvas.width, simulatedKeypoints.leftShoulder.y * canvas.height);
-    ctx.lineTo(simulatedKeypoints.leftHip.x * canvas.width, simulatedKeypoints.leftHip.y * canvas.height);
-    ctx.stroke();
+          ctx.strokeStyle = "rgba(34, 197, 94, 0.6)";
+          ctx.lineWidth = 3;
+          
+          ctx.beginPath();
+          ctx.moveTo(leftShoulder.x * canvas.width, leftShoulder.y * canvas.height);
+          ctx.lineTo(rightShoulder.x * canvas.width, rightShoulder.y * canvas.height);
+          ctx.stroke();
 
-    ctx.beginPath();
-    ctx.moveTo(simulatedKeypoints.rightShoulder.x * canvas.width, simulatedKeypoints.rightShoulder.y * canvas.height);
-    ctx.lineTo(simulatedKeypoints.rightHip.x * canvas.width, simulatedKeypoints.rightHip.y * canvas.height);
-    ctx.stroke();
+          ctx.beginPath();
+          ctx.moveTo(leftHip.x * canvas.width, leftHip.y * canvas.height);
+          ctx.lineTo(rightHip.x * canvas.width, rightHip.y * canvas.height);
+          ctx.stroke();
 
-    animationRef.current = requestAnimationFrame(simulatePoseDetection);
+          ctx.beginPath();
+          ctx.moveTo(leftShoulder.x * canvas.width, leftShoulder.y * canvas.height);
+          ctx.lineTo(leftHip.x * canvas.width, leftHip.y * canvas.height);
+          ctx.stroke();
+
+          ctx.beginPath();
+          ctx.moveTo(rightShoulder.x * canvas.width, rightShoulder.y * canvas.height);
+          ctx.lineTo(rightHip.x * canvas.width, rightHip.y * canvas.height);
+          ctx.stroke();
+        }
+      }
+    } catch (err) {
+      console.error("Pose detection error:", err);
+    }
+
+    animationRef.current = requestAnimationFrame(runPoseDetection);
   }, [calculateSizeRecommendation]);
 
   const startCamera = useCallback(async () => {
@@ -163,6 +219,8 @@ export function usePoseDetection(options: UsePoseDetectionOptions = {}): PoseDet
     setError(null);
 
     try {
+      await initializeDetector();
+
       const stream = await navigator.mediaDevices.getUserMedia({
         video: {
           width: { ideal: 1280 },
@@ -177,15 +235,15 @@ export function usePoseDetection(options: UsePoseDetectionOptions = {}): PoseDet
         videoRef.current.srcObject = stream;
         await videoRef.current.play();
         setIsTracking(true);
-        simulatePoseDetection();
+        runPoseDetection();
       }
     } catch (err) {
-      setError("Unable to access camera. Please allow camera permissions.");
-      console.error("Camera error:", err);
+      setError("Unable to access camera or load pose detection model. Please allow camera permissions and try again.");
+      console.error("Camera/Model error:", err);
     } finally {
       setIsLoading(false);
     }
-  }, [simulatePoseDetection]);
+  }, [initializeDetector, runPoseDetection]);
 
   const stopCamera = useCallback(() => {
     if (streamRef.current) {
@@ -196,8 +254,13 @@ export function usePoseDetection(options: UsePoseDetectionOptions = {}): PoseDet
       cancelAnimationFrame(animationRef.current);
       animationRef.current = null;
     }
+    if (detectorRef.current) {
+      detectorRef.current.dispose();
+      detectorRef.current = null;
+    }
     setIsTracking(false);
     setKeypoints(null);
+    setBodyBounds(null);
     setSizeRecommendation(null);
   }, []);
 
@@ -214,6 +277,7 @@ export function usePoseDetection(options: UsePoseDetectionOptions = {}): PoseDet
     isTracking,
     error,
     keypoints,
+    bodyBounds,
     sizeRecommendation,
     startCamera,
     stopCamera,

@@ -45,6 +45,7 @@ export default function TryOnPage() {
     isTracking,
     error: cameraError,
     sizeRecommendation,
+    bodyBounds,
     startCamera,
     stopCamera,
   } = usePoseDetection({
@@ -115,15 +116,21 @@ export default function TryOnPage() {
             style={{ transform: "scaleX(-1)" }}
           />
 
-          {isTracking && selectedProduct && (
+          {isTracking && selectedProduct && bodyBounds && (
             <div
-              className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-70"
-              style={{ transform: "scaleX(-1) translateX(50%) translateY(-50%)" }}
+              className="pointer-events-none absolute opacity-80"
+              style={{
+                transform: "scaleX(-1)",
+                left: `${(bodyBounds.x / (videoRef.current?.videoWidth || 640)) * 100}%`,
+                top: `${(bodyBounds.y / (videoRef.current?.videoHeight || 480)) * 100}%`,
+                width: `${(bodyBounds.width / (videoRef.current?.videoWidth || 640)) * 100}%`,
+                height: `${(bodyBounds.height / (videoRef.current?.videoHeight || 480)) * 100}%`,
+              }}
             >
               <img
                 src={selectedProduct.imageUrl}
                 alt={selectedProduct.name}
-                className="max-h-[60%] max-w-[50%] object-contain mix-blend-multiply dark:mix-blend-screen"
+                className="h-full w-full object-contain mix-blend-multiply dark:mix-blend-screen"
                 style={{
                   filter: selectedColor
                     ? `drop-shadow(0 0 10px ${selectedColor}40)`
