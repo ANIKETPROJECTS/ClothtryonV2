@@ -120,11 +120,11 @@ export default function TryOnPage() {
             <div
               className="pointer-events-none absolute"
               style={{
-                left: `${(bodyBounds.centerX / (videoRef.current?.videoWidth || 640)) * 100}%`,
+                left: `${((videoRef.current?.videoWidth || 640) - bodyBounds.centerX) / (videoRef.current?.videoWidth || 640) * 100}%`,
                 top: `${(bodyBounds.centerY / (videoRef.current?.videoHeight || 480)) * 100}%`,
                 width: `${(bodyBounds.width / (videoRef.current?.videoWidth || 640)) * 100}%`,
                 height: `${(bodyBounds.height / (videoRef.current?.videoHeight || 480)) * 100}%`,
-                transform: "scaleX(-1) translate(50%, -50%)",
+                transform: "translate(-50%, -50%)",
                 transformOrigin: "center center",
                 opacity: 0.9,
               }}
