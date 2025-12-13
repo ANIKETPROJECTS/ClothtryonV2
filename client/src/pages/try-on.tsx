@@ -1,0 +1,349 @@
+import { useEffect, useState } from "react";
+import { useQuery } from "@tanstack/react-query";
+import { useLocation, useSearch, Link } from "wouter";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { ScrollArea } from "@/components/ui/scroll-area";
+import { Skeleton } from "@/components/ui/skeleton";
+import {
+  Camera,
+  ChevronLeft,
+  ChevronRight,
+  VideoOff,
+  Sparkles,
+  Ruler,
+  ShoppingBag,
+  RotateCcw,
+  Info,
+} from "lucide-react";
+import { usePoseDetection } from "@/hooks/use-pose-detection";
+import { useCart } from "@/hooks/use-cart";
+import { useToast } from "@/hooks/use-toast";
+import type { Product, SizeKey } from "@shared/schema";
+
+export default function TryOnPage() {
+  const searchString = useSearch();
+  const searchParams = new URLSearchParams(searchString);
+  const initialProductId = searchParams.get("product");
+  
+  const [selectedProductId, setSelectedProductId] = useState<string | null>(initialProductId);
+  const [selectedColor, setSelectedColor] = useState<string | null>(null);
+  const { addToCart } = useCart();
+  const { toast } = useToast();
+
+  const { data: products, isLoading: productsLoading } = useQuery<Product[]>({
+    queryKey: ["/api/products"],
+  });
+
+  const selectedProduct = products?.find((p) => p.id === selectedProductId);
+
+  const {
+    videoRef,
+    canvasRef,
+    isLoading: cameraLoading,
+    isTracking,
+    error: cameraError,
+    sizeRecommendation,
+    startCamera,
+    stopCamera,
+  } = usePoseDetection({
+    sizeChart: selectedProduct?.sizeChart,
+  });
+
+  useEffect(() => {
+    if (products && products.length > 0 && !selectedProductId) {
+      setSelectedProductId(products[0].id);
+    }
+  }, [products, selectedProductId]);
+
+  useEffect(() => {
+    if (selectedProduct && selectedProduct.colors.length > 0 && !selectedColor) {
+      setSelectedColor(selectedProduct.colors[0]);
+    }
+  }, [selectedProduct, selectedColor]);
+
+  const handlePrevProduct = () => {
+    if (!products) return;
+    const currentIndex = products.findIndex((p) => p.id === selectedProductId);
+    const prevIndex = currentIndex <= 0 ? products.length - 1 : currentIndex - 1;
+    setSelectedProductId(products[prevIndex].id);
+    setSelectedColor(null);
+  };
+
+  const handleNextProduct = () => {
+    if (!products) return;
+    const currentIndex = products.findIndex((p) => p.id === selectedProductId);
+    const nextIndex = currentIndex >= products.length - 1 ? 0 : currentIndex + 1;
+    setSelectedProductId(products[nextIndex].id);
+    setSelectedColor(null);
+  };
+
+  const handleAddToCart = () => {
+    if (!selectedProduct || !sizeRecommendation || !selectedColor) {
+      toast({
+        title: "Unable to add to cart",
+        description: "Please start the camera for size recommendation",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    addToCart(selectedProduct, sizeRecommendation.recommendedSize, selectedColor);
+    toast({
+      title: "Added to cart",
+      description: `${selectedProduct.name} (${sizeRecommendation.recommendedSize}) added to your cart`,
+    });
+  };
+
+  return (
+    <div className="flex min-h-[calc(100vh-4rem)] flex-col lg:flex-row">
+      <div className="relative flex flex-1 flex-col bg-muted/30 p-4 lg:p-6">
+        <div className="relative mx-auto aspect-[4/3] w-full max-w-4xl overflow-hidden rounded-2xl bg-background shadow-lg">
+          <video
+            ref={videoRef}
+            className="absolute inset-0 h-full w-full object-cover"
+            autoPlay
+            playsInline
+            muted
+            style={{ transform: "scaleX(-1)" }}
+          />
+          
+          <canvas
+            ref={canvasRef}
+            className="absolute inset-0 h-full w-full"
+            style={{ transform: "scaleX(-1)" }}
+          />
+
+          {isTracking && selectedProduct && (
+            <div
+              className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 opacity-70"
+              style={{ transform: "scaleX(-1) translateX(50%) translateY(-50%)" }}
+            >
+              <img
+                src={selectedProduct.imageUrl}
+                alt={selectedProduct.name}
+                className="max-h-[60%] max-w-[50%] object-contain mix-blend-multiply dark:mix-blend-screen"
+                style={{
+                  filter: selectedColor
+                    ? `drop-shadow(0 0 10px ${selectedColor}40)`
+                    : undefined,
+                }}
+              />
+            </div>
+          )}
+
+          {!isTracking && !cameraLoading && (
+            <div className="absolute inset-0 flex flex-col items-center justify-center gap-6 bg-gradient-to-b from-muted/80 to-muted">
+              <div className="flex h-24 w-24 items-center justify-center rounded-full bg-primary/10">
+                <Camera className="h-12 w-12 text-primary" />
+              </div>
+              <div className="text-center">
+                <h2 className="text-2xl font-bold">Virtual Try-On</h2>
+                <p className="mt-2 max-w-md text-muted-foreground">
+                  Enable your camera to try on clothes virtually and get personalized size recommendations
+                </p>
+              </div>
+              <Button
+                size="lg"
+                onClick={startCamera}
+                className="gap-2"
+                data-testid="button-start-camera"
+              >
+                <Camera className="h-5 w-5" />
+                Start Camera
+              </Button>
+            </div>
+          )}
+
+          {cameraLoading && (
+            <div className="absolute inset-0 flex items-center justify-center bg-muted/80">
+              <div className="flex flex-col items-center gap-4">
+                <div className="h-12 w-12 animate-spin rounded-full border-4 border-primary border-t-transparent" />
+                <p className="text-muted-foreground">Starting camera...</p>
+              </div>
+            </div>
+          )}
+
+          {cameraError && (
+            <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 bg-destructive/10 p-8 text-center">
+              <VideoOff className="h-12 w-12 text-destructive" />
+              <p className="text-destructive">{cameraError}</p>
+              <Button variant="outline" onClick={startCamera} data-testid="button-retry-camera">
+                Try Again
+              </Button>
+            </div>
+          )}
+
+          {sizeRecommendation && isTracking && (
+            <div className="absolute right-4 top-4 animate-in fade-in slide-in-from-right-4">
+              <Card className="border-0 bg-background/90 shadow-xl backdrop-blur-lg">
+                <CardContent className="flex items-center gap-3 p-4">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10">
+                    <Ruler className="h-5 w-5 text-primary" />
+                  </div>
+                  <div>
+                    <p className="text-xs text-muted-foreground">Recommended Size</p>
+                    <p className="text-xl font-bold" data-testid="text-recommended-size">
+                      {sizeRecommendation.recommendedSize}
+                    </p>
+                  </div>
+                  <Badge variant="secondary" className="ml-2">
+                    {Math.round(sizeRecommendation.confidence * 100)}% match
+                  </Badge>
+                </CardContent>
+              </Card>
+            </div>
+          )}
+
+          {isTracking && (
+            <div className="absolute bottom-4 left-4 right-4">
+              <Card className="border-0 bg-background/90 shadow-xl backdrop-blur-lg">
+                <CardContent className="flex items-center justify-between gap-4 p-4">
+                  <div className="flex items-center gap-4">
+                    <Button
+                      variant="outline"
+                      size="icon"
+                      onClick={handlePrevProduct}
+                      data-testid="button-prev-product"
+                    >
+                      <ChevronLeft className="h-5 w-5" />
+                    </Button>
+                    <Button
+                      variant="outline"
+                      size="icon"
+                      onClick={handleNextProduct}
+                      data-testid="button-next-product"
+                    >
+                      <ChevronRight className="h-5 w-5" />
+                    </Button>
+                  </div>
+
+                  <div className="flex items-center gap-2">
+                    {selectedProduct?.colors.map((color) => (
+                      <button
+                        key={color}
+                        className={`h-8 w-8 rounded-full border-2 transition-all ${
+                          selectedColor === color
+                            ? "border-primary ring-2 ring-primary ring-offset-2"
+                            : "border-border"
+                        }`}
+                        style={{ backgroundColor: color }}
+                        onClick={() => setSelectedColor(color)}
+                        data-testid={`button-try-color-${color}`}
+                      />
+                    ))}
+                  </div>
+
+                  <div className="flex items-center gap-2">
+                    <Button
+                      variant="outline"
+                      size="icon"
+                      onClick={stopCamera}
+                      data-testid="button-stop-camera"
+                    >
+                      <RotateCcw className="h-5 w-5" />
+                    </Button>
+                    <Button
+                      onClick={handleAddToCart}
+                      className="gap-2"
+                      disabled={!sizeRecommendation}
+                      data-testid="button-add-from-tryon"
+                    >
+                      <ShoppingBag className="h-4 w-4" />
+                      Add to Cart
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          )}
+        </div>
+
+        {!isTracking && (
+          <div className="mx-auto mt-6 flex max-w-2xl items-start gap-3 rounded-lg bg-primary/5 p-4">
+            <Info className="mt-0.5 h-5 w-5 flex-shrink-0 text-primary" />
+            <div className="text-sm text-muted-foreground">
+              <p className="font-medium text-foreground">How it works</p>
+              <p className="mt-1">
+                Stand in front of your camera with good lighting. Our AI will detect your body shape 
+                and overlay the selected garment in real-time. You'll also get a personalized size 
+                recommendation based on your measurements.
+              </p>
+            </div>
+          </div>
+        )}
+      </div>
+
+      <div className="w-full border-t bg-background lg:w-80 lg:border-l lg:border-t-0 xl:w-96">
+        <div className="sticky top-16 flex flex-col">
+          <div className="border-b p-4">
+            <h2 className="flex items-center gap-2 text-lg font-semibold">
+              <Sparkles className="h-5 w-5 text-primary" />
+              Products
+            </h2>
+            <p className="mt-1 text-sm text-muted-foreground">
+              Select a product to try on
+            </p>
+          </div>
+
+          <ScrollArea className="h-[calc(100vh-12rem)]">
+            <div className="grid grid-cols-2 gap-3 p-4 lg:grid-cols-1">
+              {productsLoading
+                ? Array.from({ length: 6 }).map((_, i) => (
+                    <Card key={i} className="overflow-hidden border-0 bg-muted/30">
+                      <Skeleton className="aspect-square w-full" />
+                      <CardContent className="p-3">
+                        <Skeleton className="mb-2 h-4 w-3/4" />
+                        <Skeleton className="h-4 w-1/2" />
+                      </CardContent>
+                    </Card>
+                  ))
+                : products?.map((product) => (
+                    <Card
+                      key={product.id}
+                      className={`cursor-pointer overflow-hidden border-0 transition-all hover-elevate ${
+                        selectedProductId === product.id
+                          ? "ring-2 ring-primary ring-offset-2"
+                          : "bg-muted/30"
+                      }`}
+                      onClick={() => {
+                        setSelectedProductId(product.id);
+                        setSelectedColor(null);
+                      }}
+                      data-testid={`card-sidebar-product-${product.id}`}
+                    >
+                      <div className="aspect-square overflow-hidden bg-gradient-to-br from-muted to-muted/50">
+                        <img
+                          src={product.imageUrl}
+                          alt={product.name}
+                          className="h-full w-full object-cover"
+                        />
+                      </div>
+                      <CardContent className="p-3">
+                        <h3 className="font-medium leading-tight line-clamp-1">
+                          {product.name}
+                        </h3>
+                        <p className="mt-1 font-semibold text-primary">
+                          ${product.price.toFixed(2)}
+                        </p>
+                      </CardContent>
+                    </Card>
+                  ))}
+            </div>
+          </ScrollArea>
+
+          {selectedProduct && (
+            <div className="border-t p-4">
+              <Link href={`/product/${selectedProduct.id}`}>
+                <Button variant="outline" className="w-full gap-2" data-testid="button-view-details">
+                  View Full Details
+                </Button>
+              </Link>
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
