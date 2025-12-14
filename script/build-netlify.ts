@@ -1,5 +1,5 @@
 import { build as viteBuild } from "vite";
-import { rm, cp, mkdir } from "fs/promises";
+import { rm, cp, mkdir, writeFile } from "fs/promises";
 import { existsSync } from "fs";
 
 async function buildNetlify() {
@@ -17,6 +17,11 @@ async function buildNetlify() {
     await mkdir("dist/public/attached_assets", { recursive: true });
     await cp("attached_assets", "dist/public/attached_assets", { recursive: true });
   }
+
+  console.log("Creating _redirects file...");
+  const redirects = `/api/*  /.netlify/functions/api/:splat  200
+/*  /index.html  200`;
+  await writeFile("dist/public/_redirects", redirects);
 
   console.log("Netlify build complete!");
 }
