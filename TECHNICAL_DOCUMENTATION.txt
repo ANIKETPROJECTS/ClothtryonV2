@@ -5,16 +5,394 @@
 
 TABLE OF CONTENTS
 -----------------
-1. Overview
-2. Architecture
-3. Frontend Stack
-4. Backend Stack
-5. AI/ML Component (Pose Detection)
-6. Data Flow
-7. Database
-8. Deployment
-9. Key Files Reference
-10. API Endpoints
+1. Glossary (Technical Terms Explained)
+2. Overview
+3. Architecture
+4. Frontend Stack
+5. Backend Stack
+6. AI/ML Component (Pose Detection)
+7. Data Flow
+8. Database
+9. Deployment
+10. Key Files Reference
+11. API Endpoints
+
+================================================================================
+1. GLOSSARY (TECHNICAL TERMS EXPLAINED)
+================================================================================
+
+This section explains all technical terms used in this document in simple language.
+
+-------------------------------------------------------------------------------
+GENERAL PROGRAMMING TERMS
+-------------------------------------------------------------------------------
+
+API (Application Programming Interface)
+    A set of rules that allows different software programs to communicate.
+    Think of it like a waiter in a restaurant - you tell the waiter what you
+    want, and they bring it from the kitchen. The API takes your request and
+    brings back data from the server.
+
+CRUD
+    Stands for Create, Read, Update, Delete. These are the four basic
+    operations you can do with data. Like managing a contact list: you can
+    add new contacts (Create), view them (Read), change their info (Update),
+    or remove them (Delete).
+
+JSON (JavaScript Object Notation)
+    A simple text format for storing and sending data. It looks like this:
+    { "name": "John", "age": 25 }
+    It's like a structured way to write information that both humans and
+    computers can easily understand.
+
+UUID (Universally Unique Identifier)
+    A random string of letters and numbers that's guaranteed to be unique.
+    Example: "550e8400-e29b-41d4-a716-446655440000"
+    Used to give each item (like products or carts) a unique ID.
+
+Environment Variable
+    A setting stored outside your code that can change between different
+    computers or situations. Like having a "secret password" that's different
+    on your development computer vs. the live website.
+
+Port
+    A numbered "door" on a computer that programs use to communicate.
+    Port 5000 is like apartment number 5000 in a building - it tells
+    network traffic exactly where to go.
+
+-------------------------------------------------------------------------------
+FRONTEND TERMS (What Users See)
+-------------------------------------------------------------------------------
+
+Frontend
+    The part of the application that users see and interact with directly.
+    Everything visible in the web browser - buttons, images, text, forms.
+
+React
+    A popular JavaScript library for building user interfaces. It lets you
+    create reusable "components" (like LEGO blocks) that you combine to
+    build web pages. Created by Facebook.
+
+TypeScript
+    An enhanced version of JavaScript that adds "type checking." It's like
+    a spell-checker for code - it catches mistakes before you run the program.
+
+Vite
+    A fast development tool that bundles your code and provides instant
+    updates when you change files. "Vite" means "fast" in French.
+
+Bundling
+    The process of combining many small code files into one or a few large
+    files. Like packing many small items into one suitcase for easier transport.
+
+Hot Module Replacement (HMR)
+    A feature that updates your webpage instantly when you save code changes,
+    without refreshing the entire page. Like changing a tire on a moving car.
+
+Component
+    A reusable piece of UI code. A Button component, for example, can be
+    used anywhere you need a button, with consistent styling and behavior.
+
+State
+    Data that can change over time in your application. Like the items in
+    a shopping cart - the state changes when you add or remove items.
+
+State Management
+    The system for tracking and updating data that changes. Like a scoreboard
+    at a sports game that everyone can see and that updates as the game plays.
+
+TailwindCSS
+    A CSS framework that lets you style elements using short class names.
+    Instead of writing "color: blue; font-size: 16px", you write "text-blue-500 text-base".
+
+shadcn/ui
+    A collection of pre-built, customizable UI components (buttons, cards,
+    dialogs, etc.) that look professional and work well together.
+
+Radix UI
+    The underlying technology that powers shadcn/ui components. It handles
+    complex behaviors like dropdown menus and dialogs accessibly.
+
+Context (React Context)
+    A way to share data across many components without passing it manually
+    through each level. Like a company-wide announcement that everyone hears
+    simultaneously.
+
+Hook
+    A special function in React that lets you "hook into" React features.
+    For example, useState lets you add state to a component.
+
+Query
+    A request for data. "Querying the database" means asking it for specific
+    information, like asking "show me all products under $50."
+
+TanStack React Query
+    A library that handles fetching, caching, and updating data from the
+    server. It remembers data so you don't have to re-fetch it constantly.
+
+Caching
+    Storing data temporarily so you don't have to fetch it again. Like
+    keeping a copy of a library book at home so you don't have to visit
+    the library every time you want to read it.
+
+Router / Routing
+    The system that shows different pages based on the URL. When you go to
+    "/products", the router shows the Products page. Wouter is our router.
+
+SPA (Single Page Application)
+    A website that loads once and then updates dynamically without full
+    page refreshes. Feels faster and more app-like.
+
+-------------------------------------------------------------------------------
+BACKEND TERMS (Server Side)
+-------------------------------------------------------------------------------
+
+Backend
+    The part of the application that runs on the server. It handles data
+    storage, business logic, and things users don't see directly.
+
+Server
+    A computer (or program) that provides services to other computers.
+    It "serves" web pages, processes data, and stores information.
+
+Node.js
+    A platform that lets you run JavaScript on a server (not just in browsers).
+    It's what powers our backend.
+
+Express
+    A popular framework for building web servers with Node.js. It simplifies
+    handling web requests and responses.
+
+Middleware
+    Code that runs between receiving a request and sending a response.
+    Like security checkpoints at an airport - requests pass through
+    multiple checks before reaching their destination.
+
+RESTful API
+    A style of building APIs using standard HTTP methods:
+    - GET: Retrieve data (like reading a book)
+    - POST: Create new data (like writing a new entry)
+    - PATCH: Update existing data (like editing a document)
+    - DELETE: Remove data (like throwing away a file)
+
+Endpoint
+    A specific URL where the API accepts requests. Like "/api/products"
+    is the endpoint for getting product data.
+
+Request
+    A message sent from the browser to the server asking for something.
+    "Hey server, give me all the products!"
+
+Response
+    The server's reply to a request. Usually contains the requested data
+    or a confirmation that an action was completed.
+
+Session
+    A temporary connection between a user and the server. Like a phone call -
+    it has a beginning, middle, and end, and the server remembers you
+    throughout.
+
+Session ID
+    A unique identifier for your session. Like a ticket number at a deli
+    counter - it identifies YOUR order specifically.
+
+Validation
+    Checking that data is correct and safe before using it. Like checking
+    ID at a bar - making sure the data meets requirements.
+
+Zod
+    A library for defining data "shapes" and validating that incoming data
+    matches those shapes. If you expect a number and get text, Zod catches it.
+
+Schema
+    A definition of what data should look like. Like a form template that
+    specifies "name goes here, email goes there, age must be a number."
+
+-------------------------------------------------------------------------------
+DATABASE TERMS
+-------------------------------------------------------------------------------
+
+Database
+    An organized collection of data stored electronically. Like a giant
+    Excel spreadsheet that can hold millions of rows and is very fast to search.
+
+MongoDB
+    A "document database" that stores data in flexible, JSON-like documents.
+    Unlike traditional databases with rigid tables, MongoDB is more flexible.
+
+MongoDB Atlas
+    MongoDB's cloud-hosted service. The database runs on their computers,
+    not yours, and they handle maintenance, backups, and security.
+
+Collection
+    In MongoDB, a group of related documents. Similar to a table in
+    traditional databases. We have "products" and "carts" collections.
+
+Document
+    A single record in MongoDB. Like one row in a spreadsheet, but can
+    contain nested data. Each product is one document.
+
+Query (Database)
+    A request to find, add, update, or delete data. Like asking a librarian
+    to find all books by a certain author.
+
+-------------------------------------------------------------------------------
+AI/ML TERMS (Artificial Intelligence / Machine Learning)
+-------------------------------------------------------------------------------
+
+AI (Artificial Intelligence)
+    Computer systems that can perform tasks typically requiring human
+    intelligence, like recognizing images or understanding speech.
+
+ML (Machine Learning)
+    A type of AI where computers learn patterns from data instead of
+    being explicitly programmed. Like teaching by example.
+
+TensorFlow
+    A popular open-source library for machine learning, created by Google.
+    It handles complex mathematical calculations needed for AI.
+
+TensorFlow.js
+    TensorFlow that runs in web browsers. Lets you do AI without sending
+    data to a server - everything happens on the user's device.
+
+Model
+    A trained AI system that can make predictions or detect patterns.
+    Our pose detection "model" learned from millions of images of people.
+
+MoveNet
+    Google's pre-trained model for detecting human body poses. It can
+    identify where shoulders, elbows, knees, etc. are in an image.
+
+Pose Detection
+    AI that identifies the position of body parts in an image or video.
+    Like a smart system that can draw a stick figure over a person.
+
+Keypoints
+    Specific body points that pose detection identifies, like shoulders,
+    hips, elbows, knees. Each keypoint has X, Y coordinates.
+
+Confidence Score
+    A percentage indicating how sure the AI is about its detection.
+    90% confidence means it's pretty sure; 30% means it's guessing.
+
+WebGL
+    A technology that lets browsers use your computer's graphics card (GPU)
+    for fast calculations. Makes AI run faster in the browser.
+
+Frame
+    A single image in a video. Videos are typically 30 frames per second,
+    meaning 30 images flash by every second to create motion.
+
+FPS (Frames Per Second)
+    How many frames are processed each second. 30 FPS means smooth real-time
+    tracking; 5 FPS would look choppy.
+
+Lerp (Linear Interpolation)
+    A smoothing technique that gradually moves from one value to another.
+    Prevents jarring jumps in the clothing overlay.
+
+-------------------------------------------------------------------------------
+DEPLOYMENT TERMS
+-------------------------------------------------------------------------------
+
+Deployment
+    The process of making your application available to users on the internet.
+    Moving from "works on my computer" to "works for everyone."
+
+Production
+    The live version of your application that real users access.
+    As opposed to "development" which is your local testing version.
+
+Development Environment
+    Your local setup for building and testing. Changes here don't affect
+    real users.
+
+Build
+    The process of preparing your code for production. Combines files,
+    removes unnecessary code, and optimizes for speed.
+
+Static Files
+    Files that don't change - HTML, CSS, JavaScript, images. The server
+    just sends them as-is without processing.
+
+Netlify
+    A hosting platform that makes deploying websites easy. Handles building,
+    hosting, and provides features like serverless functions.
+
+Serverless Functions
+    Code that runs on-demand without managing servers. You write the function;
+    Netlify runs it when needed and charges only for actual use.
+
+Redirects
+    Rules that send users from one URL to another. When you visit "/shop",
+    a redirect might send you to "/products".
+
+CDN (Content Delivery Network)
+    A network of servers worldwide that stores copies of your files.
+    Users get files from the nearest server, making loading faster.
+
+-------------------------------------------------------------------------------
+FILE/CODE TERMS
+-------------------------------------------------------------------------------
+
+Directory / Folder
+    A container for files and other directories. Like folders in a filing
+    cabinet.
+
+Root Directory
+    The top-level folder of your project. All other folders are inside it.
+
+Entry Point
+    The first file that runs when your application starts. Like the front
+    door of a building.
+
+Import / Export
+    Ways to share code between files. Export makes code available;
+    import brings it into another file.
+
+Package
+    A bundle of code that someone else wrote that you can use in your project.
+    Like buying a pre-made ingredient instead of making it from scratch.
+
+npm (Node Package Manager)
+    A tool for installing and managing packages. Like an app store for
+    JavaScript code libraries.
+
+Dependency
+    A package that your project needs to work. If you use React, React
+    is a "dependency" of your project.
+
+Configuration File
+    A file that contains settings for tools or libraries. Usually ends in
+    .json, .ts, or .toml.
+
+-------------------------------------------------------------------------------
+SPECIFIC TOOLS IN THIS PROJECT
+-------------------------------------------------------------------------------
+
+Wouter
+    A tiny, simple router for React. Handles showing different pages based
+    on the URL.
+
+Drizzle
+    A TypeScript tool for working with databases. Lets you write database
+    queries in TypeScript instead of raw SQL.
+
+esbuild
+    An extremely fast JavaScript bundler used for building the server code.
+
+tsx
+    A tool that runs TypeScript files directly without needing to compile
+    them first. Used during development for speed.
+
+Framer Motion
+    A library for adding animations to React components. Makes things
+    slide, fade, and move smoothly.
+
+Lucide React
+    A library of simple, clean icons. The camera icon, shopping cart icon,
+    etc. come from here.
 
 ================================================================================
 1. OVERVIEW
