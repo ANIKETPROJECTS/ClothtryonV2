@@ -143,7 +143,12 @@ export class MongoStorage implements IStorage {
     if (!uri) {
       throw new Error("MONGODB_URI environment variable is required");
     }
-    this.client = new MongoClient(uri);
+    this.client = new MongoClient(uri, {
+      tls: true,
+      tlsAllowInvalidCertificates: false,
+      serverSelectionTimeoutMS: 30000,
+      connectTimeoutMS: 30000,
+    });
     this.initPromise = this.initialize();
   }
 
