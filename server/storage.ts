@@ -7,20 +7,35 @@ export interface IStorage {
   getAllProducts(): Promise<Product[]>;
   getProduct(id: string): Promise<Product | undefined>;
   createProduct(product: InsertProduct): Promise<Product>;
-  updateProduct(id: string, product: Partial<InsertProduct>): Promise<Product | undefined>;
+  updateProduct(
+    id: string,
+    product: Partial<InsertProduct>,
+  ): Promise<Product | undefined>;
   deleteProduct(id: string): Promise<boolean>;
-  
+
   getCart(sessionId: string): Promise<Cart>;
   addToCart(sessionId: string, item: CartItem): Promise<Cart>;
-  updateCartItem(sessionId: string, productId: string, size: string, color: string, quantity: number): Promise<Cart>;
-  removeFromCart(sessionId: string, productId: string, size: string, color: string): Promise<Cart>;
+  updateCartItem(
+    sessionId: string,
+    productId: string,
+    size: string,
+    color: string,
+    quantity: number,
+  ): Promise<Cart>;
+  removeFromCart(
+    sessionId: string,
+    productId: string,
+    size: string,
+    color: string,
+  ): Promise<Cart>;
   clearCart(sessionId: string): Promise<Cart>;
 }
 
 const sampleProducts: InsertProduct[] = [
   {
     name: "Classic Black Tee",
-    description: "Premium 100% cotton t-shirt with a relaxed fit. Perfect for everyday wear with exceptional comfort and durability.",
+    description:
+      "Premium 100% cotton t-shirt with a relaxed fit. Perfect for everyday wear with exceptional comfort and durability.",
     price: 29.99,
     sizes: ["S", "M", "L", "XL"],
     colors: ["#000000", "#FFFFFF", "#3B82F6", "#EF4444"],
@@ -31,7 +46,8 @@ const sampleProducts: InsertProduct[] = [
   },
   {
     name: "Real Friend Graphic Tee",
-    description: "Street-style graphic t-shirt featuring original artwork. Made with soft, breathable fabric.",
+    description:
+      "Street-style graphic t-shirt featuring original artwork. Made with soft, breathable fabric.",
     price: 34.99,
     sizes: ["S", "M", "L", "XL"],
     colors: ["#1F2937", "#F59E0B", "#10B981"],
@@ -42,56 +58,13 @@ const sampleProducts: InsertProduct[] = [
   },
   {
     name: "Sunshine Yellow Tee",
-    description: "Bright and cheerful yellow t-shirt crafted from ultra-soft fabric blend. Stand out with this vibrant style.",
+    description:
+      "Bright and cheerful yellow t-shirt crafted from ultra-soft fabric blend. Stand out with this vibrant style.",
     price: 32.99,
     sizes: ["S", "M", "L", "XL"],
     colors: ["#F59E0B", "#EC4899", "#14B8A6"],
     imageUrl: "/attached_assets/3_1765646362965.png",
     category: "tshirt",
-    sizeChart: defaultSizeChart,
-    inStock: true,
-  },
-  {
-    name: "Cozy Pullover Hoodie",
-    description: "Warm and cozy hoodie with kangaroo pocket. Premium fleece lining for ultimate comfort.",
-    price: 59.99,
-    sizes: ["S", "M", "L", "XL"],
-    colors: ["#1E293B", "#7C3AED", "#059669"],
-    imageUrl: "/attached_assets/image_1765645153215.png",
-    category: "hoodie",
-    sizeChart: defaultSizeChart,
-    inStock: true,
-  },
-  {
-    name: "Athletic Zip Hoodie",
-    description: "Performance hoodie with full-zip design. Moisture-wicking fabric perfect for workouts or casual wear.",
-    price: 64.99,
-    sizes: ["S", "M", "L", "XL"],
-    colors: ["#0F172A", "#DC2626", "#2563EB"],
-    imageUrl: "/attached_assets/image_1765645155974.png",
-    category: "hoodie",
-    sizeChart: defaultSizeChart,
-    inStock: true,
-  },
-  {
-    name: "Oversized Comfort Hoodie",
-    description: "Trendy oversized hoodie for maximum comfort. Extra soft fleece with dropped shoulders.",
-    price: 69.99,
-    sizes: ["S", "M", "L", "XL"],
-    colors: ["#F5F5F4", "#18181B", "#854D0E"],
-    imageUrl: "/attached_assets/image_1765645420814.png",
-    category: "hoodie",
-    sizeChart: defaultSizeChart,
-    inStock: true,
-  },
-  {
-    name: "Tech Fleece Hoodie",
-    description: "Modern tech fleece construction with sleek silhouette. Lightweight warmth with premium finish.",
-    price: 79.99,
-    sizes: ["S", "M", "L", "XL"],
-    colors: ["#334155", "#4F46E5", "#0D9488"],
-    imageUrl: "/attached_assets/image_1765647518464.png",
-    category: "hoodie",
     sizeChart: defaultSizeChart,
     inStock: true,
   },
@@ -121,13 +94,13 @@ export class MongoStorage implements IStorage {
 
   private async initialize(): Promise<void> {
     if (this.initialized) return;
-    
+
     try {
       await this.client.connect();
       this.db = this.client.db("virtualtryon");
       this.productsCollection = this.db.collection<Product>("products");
       this.cartsCollection = this.db.collection<Cart>("carts");
-      
+
       await this.seedProducts();
       this.initialized = true;
       console.log("MongoDB connected successfully");
@@ -145,10 +118,10 @@ export class MongoStorage implements IStorage {
 
   private async seedProducts(): Promise<void> {
     if (!this.productsCollection) return;
-    
+
     // Always clear and reseed to ensure product list matches sample data
     await this.productsCollection.deleteMany({});
-    
+
     const productsWithIds: Product[] = sampleProducts.map((product) => ({
       ...product,
       id: randomUUID(),
@@ -174,21 +147,24 @@ export class MongoStorage implements IStorage {
   async createProduct(insertProduct: InsertProduct): Promise<Product> {
     await this.ensureInitialized();
     if (!this.productsCollection) throw new Error("Database not initialized");
-    
+
     const id = randomUUID();
     const product: Product = { ...insertProduct, id };
     await this.productsCollection.insertOne(product);
     return product;
   }
 
-  async updateProduct(id: string, updates: Partial<InsertProduct>): Promise<Product | undefined> {
+  async updateProduct(
+    id: string,
+    updates: Partial<InsertProduct>,
+  ): Promise<Product | undefined> {
     await this.ensureInitialized();
     if (!this.productsCollection) return undefined;
-    
+
     const result = await this.productsCollection.findOneAndUpdate(
       { id },
       { $set: updates },
-      { returnDocument: "after" }
+      { returnDocument: "after" },
     );
     return result || undefined;
   }
@@ -196,7 +172,7 @@ export class MongoStorage implements IStorage {
   async deleteProduct(id: string): Promise<boolean> {
     await this.ensureInitialized();
     if (!this.productsCollection) return false;
-    
+
     const result = await this.productsCollection.deleteOne({ id });
     return result.deletedCount > 0;
   }
@@ -204,13 +180,13 @@ export class MongoStorage implements IStorage {
   private async getOrCreateCart(sessionId: string): Promise<Cart> {
     await this.ensureInitialized();
     if (!this.cartsCollection) throw new Error("Database not initialized");
-    
+
     const existingCart = await this.cartsCollection.findOne({ sessionId });
     if (existingCart) {
       const { _id, ...cart } = existingCart as any;
       return cart as Cart;
     }
-    
+
     const newCart: Cart = {
       id: randomUUID(),
       sessionId,
@@ -235,11 +211,11 @@ export class MongoStorage implements IStorage {
   private async saveCart(cart: Cart): Promise<void> {
     await this.ensureInitialized();
     if (!this.cartsCollection) return;
-    
+
     await this.cartsCollection.updateOne(
       { sessionId: cart.sessionId },
       { $set: cart },
-      { upsert: true }
+      { upsert: true },
     );
   }
 
@@ -252,9 +228,12 @@ export class MongoStorage implements IStorage {
 
   async addToCart(sessionId: string, item: CartItem): Promise<Cart> {
     const cart = await this.getOrCreateCart(sessionId);
-    
+
     const existingIndex = cart.items.findIndex(
-      (i) => i.productId === item.productId && i.size === item.size && i.color === item.color
+      (i) =>
+        i.productId === item.productId &&
+        i.size === item.size &&
+        i.color === item.color,
     );
 
     if (existingIndex >= 0) {
@@ -273,7 +252,7 @@ export class MongoStorage implements IStorage {
     productId: string,
     size: string,
     color: string,
-    quantity: number
+    quantity: number,
   ): Promise<Cart> {
     const cart = await this.getOrCreateCart(sessionId);
 
@@ -282,7 +261,7 @@ export class MongoStorage implements IStorage {
     }
 
     const item = cart.items.find(
-      (i) => i.productId === productId && i.size === size && i.color === color
+      (i) => i.productId === productId && i.size === size && i.color === color,
     );
 
     if (item) {
@@ -294,11 +273,17 @@ export class MongoStorage implements IStorage {
     return cart;
   }
 
-  async removeFromCart(sessionId: string, productId: string, size: string, color: string): Promise<Cart> {
+  async removeFromCart(
+    sessionId: string,
+    productId: string,
+    size: string,
+    color: string,
+  ): Promise<Cart> {
     const cart = await this.getOrCreateCart(sessionId);
-    
+
     cart.items = cart.items.filter(
-      (i) => !(i.productId === productId && i.size === size && i.color === color)
+      (i) =>
+        !(i.productId === productId && i.size === size && i.color === color),
     );
 
     cart.totalPrice = await this.calculateTotal(cart);
