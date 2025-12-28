@@ -1,4 +1,4 @@
-import { useEffect, useState, Suspense } from "react";
+import React, { useEffect, useState, Suspense } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { useLocation, useSearch, Link } from "wouter";
 import { Button } from "@/components/ui/button";
@@ -22,24 +22,34 @@ import { useCart } from "@/hooks/use-cart";
 import { useToast } from "@/hooks/use-toast";
 import type { Product, SizeKey } from "@shared/schema";
 import { Canvas } from "@react-three/fiber";
-import { useGLTF } from "@react-three/drei";
+import { useGLTF, Html } from "@react-three/drei";
 
 function ModelOverlay({ url, color }: { url: string; color?: string | null }) {
+  console.log("3D_TRYON: ModelOverlay mounted", { url, color });
   const { scene } = useGLTF(url);
   
+  useEffect(() => {
+    if (scene) {
+      console.log("3D_TRYON: Model loaded in Overlay", scene);
+      scene.traverse((child) => {
+        if ((child as any).isMesh) {
+          const mesh = child as any;
+          if (mesh.material && color) {
+            mesh.material.color.set(color);
+          }
+          if (mesh.material) {
+            mesh.material.transparent = false;
+            mesh.material.opacity = 1;
+            mesh.material.needsUpdate = true;
+          }
+        }
+      });
+    }
+  }, [scene, color]);
+
   if (!scene) return null;
 
-  // Apply color to model
-  scene.traverse((child) => {
-    if ((child as any).isMesh && color) {
-      const mesh = child as any;
-      if (mesh.material) {
-        mesh.material.color.set(color);
-      }
-    }
-  });
-
-  return <primitive object={scene} scale={2.5} position={[0, -2, 0]} />;
+  return <primitive object={scene} scale={3.0} position={[0, -2.5, 0]} />;
 }
 
 export default function TryOnPage() {
@@ -149,12 +159,25 @@ export default function TryOnPage() {
                 opacity: 0.9,
               }}
             >
+              {(() => {
+                console.log("3D_TRYON: Checking product", {
+                  id: selectedProduct.id,
+                  hasModel: !!selectedProduct.modelUrl,
+                  url: selectedProduct.modelUrl
+                });
+                return null;
+              })()}
               {selectedProduct.modelUrl ? (
-                <div className="h-full w-full">
-                  <Canvas camera={{ position: [0, 0, 4], fov: 45 }}>
-                    <Suspense fallback={null}>
-                      <ambientLight intensity={0.5} />
-                      <pointLight position={[10, 10, 10]} />
+                <div className="h-full w-full border-2 border-red-500/20" style={{ minHeight: '300px', pointerEvents: 'auto' }}>
+                  <Canvas 
+                    key={selectedProduct.modelUrl}
+                    camera={{ position: [0, 0, 5], fov: 50 }}
+                    onCreated={({ gl }) => console.log("3D_TRYON: Canvas Created Successfully", !!gl)}
+                    onError={(err) => console.error("3D_TRYON: Canvas Critical Error", err)}
+                  >
+                    <Suspense fallback={<Html center><div className="text-white bg-black p-2">Loading Model...</div></Html>}>
+                      <ambientLight intensity={1.5} />
+                      <pointLight position={[10, 10, 10]} intensity={2} />
                       <ModelOverlay url={selectedProduct.modelUrl} color={selectedColor} />
                     </Suspense>
                   </Canvas>

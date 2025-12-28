@@ -83,7 +83,16 @@ export default function ProductDetailPage() {
 
         <div className="grid gap-12 lg:grid-cols-2">
           <div className="space-y-4">
-            <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-muted to-muted/50">
+            <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-muted to-muted/50 min-h-[500px]">
+              {(() => {
+                console.log("3D_DETAIL: State check", {
+                  productId: id,
+                  productLoaded: !!product,
+                  hasModel: !!product?.modelUrl,
+                  url: product?.modelUrl
+                });
+                return null;
+              })()}
               {product.modelUrl ? (
                 <TShirtViewer modelUrl={product.modelUrl} />
               ) : (
