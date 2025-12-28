@@ -43,7 +43,6 @@ function OBJModel({ url, color }: { url: string; color?: string | null }) {
   useEffect(() => {
     if (!url) return;
 
-    // Simple OBJ parser - just create vertices from OBJ file
     const loadOBJ = async () => {
       try {
         const response = await fetch(url);
@@ -84,13 +83,13 @@ function OBJModel({ url, color }: { url: string; color?: string | null }) {
   }, [url]);
 
   if (!geometry) {
-    return null;
+    return <group />;
   }
 
   return (
-    <group ref={groupRef} scale={0.03} position={[0, -1, 0]}>
+    <group ref={groupRef} scale={2.5} position={[0, -0.2, 0]}>
       <mesh geometry={geometry}>
-        <meshStandardMaterial color={color || "#000000"} />
+        <meshStandardMaterial color={color || "#000000"} wireframe={false} />
       </mesh>
     </group>
   );
@@ -101,11 +100,7 @@ function ModelContent({ url, color }: { url: string; color?: string | null }) {
 }
 
 function ModelOverlay({ url, color }: { url: string; color?: string | null }) {
-  return (
-    <Suspense fallback={<Html center><div className="text-white bg-black p-2">Loading Model...</div></Html>}>
-      <ModelContent url={url} color={color} />
-    </Suspense>
-  );
+  return <ModelContent url={url} color={color} />;
 }
 
 export default function TryOnPage() {
