@@ -1,0 +1,633 @@
+chunk-RPCDYKBN.js?v=1980e057:21551 Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools
+@tensorflow-models_pose-detection.js?v=1980e057:4255 The powerPreference option is currently ignored when calling requestAdapter() on Windows. See https://crbug.com/369219127
+(anonymous) @ @tensorflow-models_pose-detection.js?v=1980e057:4255
+try-on.tsx:199 3D_TRYON: Checking product Object
+try-on.tsx:199 3D_TRYON: Checking product Object
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted Object
+try-on.tsx:213 3D_TRYON: Canvas Created Successfully true
+try-on.tsx:199 3D_TRYON: Checking product Object
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted Object
+try-on.tsx:199 3D_TRYON: Checking product Object
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted Object
+try-on.tsx:199 3D_TRYON: Checking product Object
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted Object
+try-on.tsx:199 3D_TRYON: Checking product Object
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted Object
+try-on.tsx:199 3D_TRYON: Checking product Object
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted Object
+try-on.tsx:199 3D_TRYON: Checking product Object
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+try-on.tsx:40 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+try-on.tsx:199 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+ 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+ 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+ 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+ 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+ 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+ 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+ 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+ 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+ 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+ 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+ 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+ 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+ 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+ 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+ 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+ 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+ 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+ 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+ 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+ 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+ 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+ 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+ 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+ 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+ 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+ 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+ 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+ 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+ 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+ 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+ 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+ 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+ 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+ 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+ 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+ 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+ 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+ 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+ 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+ 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+ 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+ 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+ 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+ 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+ 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+ 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+ 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+ 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+ 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+ 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+ 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+ 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+ 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+ 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+ 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+ 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+ 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+ 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+ 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+ 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+ 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+ 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+ 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+ 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+ 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+ 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+ 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+ 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+ 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+ 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+ 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+ 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+ 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+ 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+ 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+ 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+ 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+ 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+ 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+ 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+ 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+ 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+ 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
+ 3D_TRYON: Checking product {id: '3c03e085-089f-46f0-a05b-c594a9630eac', hasModel: true, url: '/attached_assets/tshirt_1766937212463.glb'}
+ 3D_TRYON: ModelOverlay mounted {url: '/attached_assets/tshirt_1766937212463.glb', color: '#000000'}
