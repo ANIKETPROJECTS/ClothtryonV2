@@ -169,8 +169,8 @@ function FBXModel({ url, color }: { url: string; color?: string | null }) {
   if (!fbx) return null;
 
   return (
-    <Center>
-      <primitive object={fbx} scale={0.01} />
+    <Center top>
+      <primitive object={fbx} scale={0.08} />
     </Center>
   );
 }
@@ -311,7 +311,7 @@ export default function TryOnPage() {
                 height: `${(bodyBounds.height / (videoRef.current?.videoHeight || 480)) * 100}%`,
                 transform: "translate(-50%, -50%)",
                 transformOrigin: "center center",
-                opacity: 0.9,
+                opacity: 1,
               }}
             >
               {(() => {
@@ -323,21 +323,20 @@ export default function TryOnPage() {
                 return null;
               })()}
               {selectedProduct.modelUrl ? (
-                <div className="h-full w-full" style={{ minHeight: '300px', pointerEvents: 'auto', background: '#f5f5f5' }}>
+                <div className="h-full w-full" style={{ minHeight: '300px', pointerEvents: 'auto' }}>
                   <Canvas 
                     key={selectedProduct.modelUrl}
-                    camera={{ position: [0, 0, 3.5], fov: 60 }}
+                    gl={{ alpha: true, antialias: true }}
+                    camera={{ position: [0, 0, 5], fov: 50 }}
                     onCreated={({ gl }) => {
-                      gl.setClearColor(0xf5f5f5);
                       console.log("3D_TRYON: Canvas Created Successfully", !!gl);
                     }}
                     onError={(err) => console.error("3D_TRYON: Canvas Critical Error", err)}
                   >
                     <CameraController />
-                    <ambientLight intensity={2.2} />
-                    <pointLight position={[5, 5, 8]} intensity={3} />
-                    <pointLight position={[-5, 3, 5]} intensity={1.5} />
-                    <directionalLight position={[0, 5, 5]} intensity={1.8} />
+                    <ambientLight intensity={1.5} />
+                    <pointLight position={[5, 5, 8]} intensity={2} />
+                    <directionalLight position={[0, 5, 5]} intensity={1.5} />
                     <ModelOverlay url={selectedProduct.modelUrl} color={selectedColor} />
                   </Canvas>
                 </div>
