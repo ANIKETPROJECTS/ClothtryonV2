@@ -38,20 +38,42 @@ function CameraController() {
 
 function ModelContent({ url, color }: { url: string; color?: string | null }) {
   const gltf = useGLTF(url);
-  console.log("3D_TRYON: GLTF loaded", { url, nodes: Object.keys(gltf.nodes || {}) });
+  const [loaded, setLoaded] = React.useState(false);
   
   useEffect(() => {
-    Object.values(gltf.nodes || {}).forEach((node: any) => {
-      if (node?.isMesh && node.material) {
-        if (color) node.material.color.set(color);
-        node.material.side = THREE.DoubleSide;
-        node.material.needsUpdate = true;
-      }
-    });
-  }, [gltf.nodes, color]);
+    if (gltf?.scene) {
+      console.log("3D_TRYON: Scene structure", { 
+        children: gltf.scene.children.length,
+        nodes: Object.keys(gltf.nodes || {}),
+        animations: gltf.animations?.length || 0
+      });
+      
+      // Traverse and apply material changes
+      gltf.scene.traverse((node: any) => {
+        if (node.isMesh) {
+          console.log("3D_TRYON: Mesh found", { name: node.name });
+          if (node.material) {
+            if (color) node.material.color.set(color);
+            node.material.side = THREE.DoubleSide;
+            if (Array.isArray(node.material)) {
+              node.material.forEach((m: any) => {
+                if (color) m.color.set(color);
+                m.side = THREE.DoubleSide;
+              });
+            }
+          }
+        }
+      });
+      setLoaded(true);
+    }
+  }, [gltf, color]);
+
+  if (!loaded) {
+    return <Html center><div className="text-white bg-black p-2">Loading 3D Model...</div></Html>;
+  }
 
   return (
-    <group scale={1.8} position={[0, -0.3, 0]}>
+    <group scale={2.0} position={[0, 0, 0]}>
       <primitive object={gltf.scene} />
     </group>
   );
