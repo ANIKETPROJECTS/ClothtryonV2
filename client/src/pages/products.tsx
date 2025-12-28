@@ -96,57 +96,66 @@ export default function ProductsPage() {
 
 function ProductCard({ product }: { product: Product }) {
   return (
-    <Link href={`/product/${product.id}`}>
-      <Card 
-        className="group cursor-pointer overflow-hidden border-0 bg-muted/30 transition-all duration-200 hover-elevate"
-        data-testid={`card-product-${product.id}`}
-      >
-        <div className="relative aspect-square overflow-hidden bg-gradient-to-br from-muted to-muted/50">
-          <img
-            src={product.imageUrl}
-            alt={product.name}
-            className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
-          />
-          <div className="absolute bottom-2 right-2 opacity-0 transition-opacity group-hover:opacity-100">
-            <Link href={`/try-on?product=${product.id}`}>
-              <Button size="sm" className="gap-1 shadow-lg" data-testid={`button-quick-try-${product.id}`}>
+    <div className="group block h-full">
+      <Link href={`/product/${product.id}`}>
+        <Card 
+          className="group cursor-pointer overflow-hidden border-0 bg-muted/30 transition-all duration-200 hover-elevate h-full"
+          data-testid={`card-product-${product.id}`}
+        >
+          <div className="relative aspect-square overflow-hidden bg-gradient-to-br from-muted to-muted/50">
+            <img
+              src={product.imageUrl}
+              alt={product.name}
+              className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+            />
+            <div className="absolute bottom-2 right-2 opacity-0 transition-opacity group-hover:opacity-100 z-10">
+              <Button 
+                size="sm" 
+                className="gap-1 shadow-lg" 
+                data-testid={`button-quick-try-${product.id}`}
+                onClick={(e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  window.location.href = `/try-on?product=${product.id}`;
+                }}
+              >
                 <Camera className="h-3 w-3" />
                 Try On
               </Button>
-            </Link>
-          </div>
-          {!product.inStock && (
-            <Badge variant="secondary" className="absolute left-2 top-2">
-              Out of Stock
-            </Badge>
-          )}
-        </div>
-        <CardContent className="p-4">
-          <h3 className="font-medium leading-tight line-clamp-1" data-testid={`text-product-name-${product.id}`}>
-            {product.name}
-          </h3>
-          <div className="mt-2 flex items-center justify-between gap-2">
-            <span className="text-lg font-bold" data-testid={`text-product-price-${product.id}`}>
-              ${product.price.toFixed(2)}
-            </span>
-            <div className="flex gap-1">
-              {product.colors.slice(0, 3).map((color) => (
-                <div
-                  key={color}
-                  className="h-4 w-4 rounded-full border border-border"
-                  style={{ backgroundColor: color }}
-                  title={color}
-                />
-              ))}
-              {product.colors.length > 3 && (
-                <span className="text-xs text-muted-foreground">
-                  +{product.colors.length - 3}
-                </span>
-              )}
             </div>
+            {!product.inStock && (
+              <Badge variant="secondary" className="absolute left-2 top-2">
+                Out of Stock
+              </Badge>
+            )}
           </div>
-        </CardContent>
-      </Card>
-    </Link>
+          <CardContent className="p-4">
+            <h3 className="font-medium leading-tight line-clamp-1" data-testid={`text-product-name-${product.id}`}>
+              {product.name}
+            </h3>
+            <div className="mt-2 flex items-center justify-between gap-2">
+              <span className="text-lg font-bold" data-testid={`text-product-price-${product.id}`}>
+                ${product.price.toFixed(2)}
+              </span>
+              <div className="flex gap-1">
+                {product.colors.slice(0, 3).map((color) => (
+                  <div
+                    key={color}
+                    className="h-4 w-4 rounded-full border border-border"
+                    style={{ backgroundColor: color }}
+                    title={color}
+                  />
+                ))}
+                {product.colors.length > 3 && (
+                  <span className="text-xs text-muted-foreground">
+                    +{product.colors.length - 3}
+                  </span>
+                )}
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      </Link>
+    </div>
   );
 }

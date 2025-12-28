@@ -26,8 +26,20 @@ import { useGLTF } from "@react-three/drei";
 
 function ModelOverlay({ url, color }: { url: string; color?: string | null }) {
   const { scene } = useGLTF(url);
-  // Apply color to model if needed (simplified for now)
-  return <primitive object={scene} scale={1.5} />;
+  
+  if (!scene) return null;
+
+  // Apply color to model
+  scene.traverse((child) => {
+    if ((child as any).isMesh && color) {
+      const mesh = child as any;
+      if (mesh.material) {
+        mesh.material.color.set(color);
+      }
+    }
+  });
+
+  return <primitive object={scene} scale={2.5} position={[0, -2, 0]} />;
 }
 
 export default function TryOnPage() {
