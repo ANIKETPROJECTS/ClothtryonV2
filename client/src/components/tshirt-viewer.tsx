@@ -19,31 +19,54 @@ function DebugCamera() {
 function Model({ url }: { url: string }) {
   console.log("3D_DEBUG: Model component mounted with URL:", url);
   const isFBX = url.toLowerCase().endsWith(".fbx");
-  const model = isFBX ? useFBX(url) : useGLTF(url).scene;
+  
+  let model: any;
+  try {
+    model = isFBX ? useFBX(url) : useGLTF(url).scene;
+    console.log("3D_DEBUG: Model loaded successfully:", { 
+      type: isFBX ? "FBX" : "GLTF",
+      hasModel: !!model,
+      uuid: model?.uuid,
+      name: model?.name,
+      childrenCount: model?.children?.length
+    });
+  } catch (err) {
+    console.error("3D_DEBUG: Error loading model:", err);
+  }
   
   useEffect(() => {
     if (model) {
-      console.log("3D_DEBUG: Model object ready:", model);
-      model.traverse((child) => {
-        if ((child as any).isMesh) {
-          console.log("3D_DEBUG: Mesh found in scene:", child.name);
-          const mesh = child as any;
-          if (mesh.material) {
-            mesh.material.transparent = false;
-            mesh.material.opacity = 1;
-            mesh.material.depthTest = true;
-            mesh.material.depthWrite = true;
-            mesh.material.color.set(0xffffff);
-            mesh.material.needsUpdate = true;
+      console.log("3D_DEBUG: Traversing model for materials...");
+      let meshCount = 0;
+      model.traverse((child: any) => {
+        if (child.isMesh) {
+          meshCount++;
+          console.log(`3D_DEBUG: Mesh[${meshCount}] found:`, {
+            name: child.name,
+            geometry: !!child.geometry,
+            material: !!child.material,
+            visible: child.visible,
+            position: child.position,
+            scale: child.scale
+          });
+          if (child.material) {
+            child.material.transparent = false;
+            child.material.opacity = 1;
+            child.material.depthTest = true;
+            child.material.depthWrite = true;
+            if (child.material.color) child.material.color.set(0xffffff);
+            child.material.needsUpdate = true;
           }
         }
       });
-    } else {
-      console.warn("3D_DEBUG: Model is null or undefined");
+      console.log("3D_DEBUG: Total meshes found:", meshCount);
     }
   }, [model]);
 
-  if (!model) return null;
+  if (!model) {
+    console.warn("3D_DEBUG: Model is null, rendering nothing");
+    return null;
+  }
 
   return (
     <Center>
