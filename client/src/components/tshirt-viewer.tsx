@@ -33,6 +33,7 @@ function Model({ url }: { url: string }) {
             mesh.material.opacity = 1;
             mesh.material.depthTest = true;
             mesh.material.depthWrite = true;
+            mesh.material.color.set(0xffffff);
             mesh.material.needsUpdate = true;
           }
         }
@@ -45,8 +46,8 @@ function Model({ url }: { url: string }) {
   if (!model) return null;
 
   return (
-    <Center top>
-      <primitive object={model} scale={0.01} />
+    <Center>
+      <primitive object={model} scale={0.005} />
     </Center>
   );
 }
@@ -59,8 +60,8 @@ export default function TShirtViewer({ modelUrl }: { modelUrl: string }) {
       <ErrorBoundary fallback={<div className="p-4 text-destructive bg-background h-full flex items-center justify-center">Error rendering 3D model. Check console for details.</div>}>
         <Canvas 
           shadows 
-          gl={{ antialias: true, alpha: true }}
-          camera={{ position: [0, 0, 3], fov: 40 }}
+          gl={{ antialias: true, alpha: true, logarithmicDepthBuffer: true }}
+          camera={{ position: [0, 0, 10], fov: 35 }}
           onCreated={({ gl, scene }) => {
             console.log("3D_DEBUG: Canvas created", {
               webgl: !!gl.getContext(),
@@ -71,8 +72,9 @@ export default function TShirtViewer({ modelUrl }: { modelUrl: string }) {
         >
           <DebugCamera />
           <ambientLight intensity={1.5} />
-          <pointLight position={[10, 10, 10]} intensity={1.5} />
-          <directionalLight position={[-5, 5, 5]} intensity={1} />
+          <pointLight position={[10, 10, 10]} intensity={2} />
+          <directionalLight position={[-5, 5, 5]} intensity={1.5} />
+          <spotLight position={[0, 10, 0]} intensity={1} />
           
           <Suspense fallback={<Html center><div className="text-white bg-black/50 p-2 rounded">Loading 3D Model...</div></Html>}>
             <Model url={modelUrl} />
