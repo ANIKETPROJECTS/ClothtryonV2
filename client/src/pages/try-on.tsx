@@ -1,4 +1,4 @@
-import React, { useEffect, useState, Suspense } from "react";
+import React, { useEffect, useState, Suspense, useMemo } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { useLocation, useSearch, Link } from "wouter";
 import { Button } from "@/components/ui/button";
@@ -103,66 +103,33 @@ function OBJModel({ url, color }: { url: string; color?: string | null }) {
   );
 }
 
-function ModelContent({ url, color }: { url: string; color?: string | null }) {
-  console.log("3D_TRYON: ModelContent loading URL:", url);
-  const isFBX = url.toLowerCase().endsWith(".fbx");
-  const isOBJ = url.toLowerCase().endsWith(".obj");
-  const isGLTF = url.toLowerCase().endsWith(".gltf") || url.toLowerCase().endsWith(".glb");
-
-  if (isFBX) {
-    console.log("3D_TRYON: Using FBX path for", url);
-    return <FBXModel url={url} color={color} />;
-  }
-  if (isOBJ) {
-    console.log("3D_TRYON: Using OBJ path for", url);
-    return <OBJModel url={url} color={color} />;
-  }
-  if (isGLTF) {
-    console.log("3D_TRYON: Using GLTF path for", url);
-    return <GLTFModel url={url} color={color} />;
-  }
-
-  console.warn("3D_TRYON: Unknown model format for", url);
-  return null;
-}
-
-function FBXModel({ url, color }: { url: string; color?: string | null }) {
-  console.log("3D_TRYON: FBXModel component mounting for", url);
+function FBXModel({ url, color, bodyBounds }: { url: string; color?: string | null; bodyBounds?: any }) {
+  console.log("3D_TRYON: FBXModel mounting", { url, bodyBounds });
   const fbx = useFBX(url);
   
+  const dynamicScale = useMemo(() => {
+    if (!bodyBounds) return 0.01;
+    // Base scale 0.01 for a typical 100-unit model fitting a 640px width
+    // Adjust based on the detected body width relative to video width
+    const baseWidth = 200; // Expected width in pixels for 0.01 scale
+    return (bodyBounds.width / baseWidth) * 0.01;
+  }, [bodyBounds]);
+
   useEffect(() => {
     if (fbx) {
-      console.log("3D_TRYON: FBX object details:", {
-        type: fbx.type,
-        uuid: fbx.uuid,
-        name: fbx.name,
-        children: fbx.children?.map(c => ({ name: c.name, type: c.type })),
-        scale: fbx.scale,
-        position: fbx.position
-      });
       fbx.traverse((child: any) => {
         if (child.isMesh) {
-          console.log("3D_TRYON: FBX Mesh detailed:", {
-            name: child.name,
-            geometry: !!child.geometry,
-            material: !!child.material,
-            visible: child.visible,
-            opacity: child.material?.opacity,
-            transparent: child.material?.transparent
-          });
           if (child.material) {
             child.material.transparent = false;
             child.material.opacity = 1;
             if (child.material.color) {
-              child.material.color.set(0xffffff); // Force visibility
+              child.material.color.set(0xffffff);
               if (color) child.material.color.set(color);
             }
             child.material.needsUpdate = true;
           }
         }
       });
-    } else {
-      console.warn("3D_TRYON: FBX object is null for", url);
     }
   }, [fbx, color]);
 
@@ -170,20 +137,22 @@ function FBXModel({ url, color }: { url: string; color?: string | null }) {
 
   return (
     <Center>
-      <primitive object={fbx} scale={0.01} />
+      <primitive object={fbx} scale={dynamicScale} />
     </Center>
   );
 }
 
-function GLTFModel({ url, color }: { url: string; color?: string | null }) {
+function GLTFModel({ url, color, bodyBounds }: { url: string; color?: string | null; bodyBounds?: any }) {
   const { scene } = useGLTF(url);
+  
+  const dynamicScale = useMemo(() => {
+    if (!bodyBounds) return 2.5;
+    const baseWidth = 200;
+    return (bodyBounds.width / baseWidth) * 2.5;
+  }, [bodyBounds]);
+
   useEffect(() => {
     if (scene) {
-      console.log("3D_TRYON: GLTF Model Loaded:", {
-        uuid: scene.uuid,
-        name: scene.name,
-        children: scene.children.length
-      });
       scene.traverse((child: any) => {
         if (child.isMesh) {
           if (child.material && color) {
@@ -195,14 +164,25 @@ function GLTFModel({ url, color }: { url: string; color?: string | null }) {
     }
   }, [scene, color]);
 
-  return <primitive object={scene} scale={2.5} position={[0, -0.2, 0]} />;
+  return <primitive object={scene} scale={dynamicScale} position={[0, -0.2, 0]} />;
 }
 
-function ModelOverlay({ url, color }: { url: string; color?: string | null }) {
-  console.log("3D_TRYON: ModelOverlay rendering with URL:", url);
+function ModelContent({ url, color, bodyBounds }: { url: string; color?: string | null; bodyBounds?: any }) {
+  const isFBX = url.toLowerCase().endsWith(".fbx");
+  const isOBJ = url.toLowerCase().endsWith(".obj");
+  const isGLTF = url.toLowerCase().endsWith(".gltf") || url.toLowerCase().endsWith(".glb");
+
+  if (isFBX) return <FBXModel url={url} color={color} bodyBounds={bodyBounds} />;
+  if (isOBJ) return <OBJModel url={url} color={color} />;
+  if (isGLTF) return <GLTFModel url={url} color={color} bodyBounds={bodyBounds} />;
+
+  return null;
+}
+
+function ModelOverlay({ url, color, bodyBounds }: { url: string; color?: string | null; bodyBounds?: any }) {
   return (
     <Suspense fallback={<Html center><div className="text-white bg-black/50 p-2 rounded">Loading Model...</div></Html>}>
-      <ModelContent url={url} color={color} />
+      <ModelContent url={url} color={color} bodyBounds={bodyBounds} />
     </Suspense>
   );
 }
@@ -337,7 +317,7 @@ export default function TryOnPage() {
                     <ambientLight intensity={1.5} />
                     <pointLight position={[5, 5, 8]} intensity={2} />
                     <directionalLight position={[0, 5, 5]} intensity={1.5} />
-                    <ModelOverlay url={selectedProduct.modelUrl} color={selectedColor} />
+                    <ModelOverlay url={selectedProduct.modelUrl} color={selectedColor} bodyBounds={bodyBounds} />
                   </Canvas>
                 </div>
               ) : (
