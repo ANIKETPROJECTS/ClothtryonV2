@@ -36,47 +36,27 @@ function CameraController() {
   return null;
 }
 
-function ModelContent({ url, color }: { url: string; color?: string | null }) {
-  const gltf = useGLTF(url);
-  const [loaded, setLoaded] = React.useState(false);
+function TestBox({ color }: { color?: string | null }) {
+  const meshRef = React.useRef<THREE.Mesh>(null);
   
   useEffect(() => {
-    if (gltf?.scene) {
-      console.log("3D_TRYON: Scene structure", { 
-        children: gltf.scene.children.length,
-        nodes: Object.keys(gltf.nodes || {}),
-        animations: gltf.animations?.length || 0
-      });
-      
-      // Traverse and apply material changes
-      gltf.scene.traverse((node: any) => {
-        if (node.isMesh) {
-          console.log("3D_TRYON: Mesh found", { name: node.name });
-          if (node.material) {
-            if (color) node.material.color.set(color);
-            node.material.side = THREE.DoubleSide;
-            if (Array.isArray(node.material)) {
-              node.material.forEach((m: any) => {
-                if (color) m.color.set(color);
-                m.side = THREE.DoubleSide;
-              });
-            }
-          }
-        }
-      });
-      setLoaded(true);
+    if (meshRef.current && color) {
+      (meshRef.current.material as THREE.MeshStandardMaterial).color.set(color);
     }
-  }, [gltf, color]);
-
-  if (!loaded) {
-    return <Html center><div className="text-white bg-black p-2">Loading 3D Model...</div></Html>;
-  }
+  }, [color]);
 
   return (
-    <group scale={2.0} position={[0, 0, 0]}>
-      <primitive object={gltf.scene} />
-    </group>
+    <mesh ref={meshRef} scale={[1.5, 2, 0.5]}>
+      <boxGeometry args={[1, 1, 1]} />
+      <meshStandardMaterial color={color || "#000000"} />
+    </mesh>
   );
+}
+
+function ModelContent({ url, color }: { url: string; color?: string | null }) {
+  // Currently rendering test box while GLB loading is fixed
+  // TODO: Replace with actual GLB model once working
+  return <TestBox color={color} />;
 }
 
 function ModelOverlay({ url, color }: { url: string; color?: string | null }) {
