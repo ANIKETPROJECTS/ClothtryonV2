@@ -21,35 +21,71 @@ import { usePoseDetection } from "@/hooks/use-pose-detection";
 import { useCart } from "@/hooks/use-cart";
 import { useToast } from "@/hooks/use-toast";
 import type { Product, SizeKey } from "@shared/schema";
-import { Canvas } from "@react-three/fiber";
-import { useGLTF, Html } from "@react-three/drei";
+import { Canvas, useFrame, useThree } from "@react-three/fiber";
+import { useGLTF, Html, OrbitControls } from "@react-three/drei";
+import * as THREE from "three";
+
+function CameraController() {
+  const { camera } = useThree();
+  
+  useEffect(() => {
+    camera.position.set(0, 0, 3);
+    camera.lookAt(0, 0, 0);
+  }, [camera]);
+
+  return null;
+}
 
 function ModelOverlay({ url, color }: { url: string; color?: string | null }) {
   console.log("3D_TRYON: ModelOverlay mounted", { url, color });
   const { scene } = useGLTF(url);
+  const groupRef = React.useRef<THREE.Group>(null);
   
   useEffect(() => {
     if (scene) {
-      console.log("3D_TRYON: Model loaded in Overlay", scene);
+      console.log("3D_TRYON: Model loaded in Overlay Group", scene);
       scene.traverse((child) => {
         if ((child as any).isMesh) {
           const mesh = child as any;
-          if (mesh.material && color) {
-            mesh.material.color.set(color);
-          }
           if (mesh.material) {
+            if (color) {
+              mesh.material.color.set(color);
+            }
             mesh.material.transparent = false;
             mesh.material.opacity = 1;
+            mesh.material.side = THREE.DoubleSide;
+            mesh.material.emissive.set(0x000000);
+            mesh.material.emissiveIntensity = 0;
             mesh.material.needsUpdate = true;
+            mesh.castShadow = true;
+            mesh.receiveShadow = true;
           }
         }
       });
     }
   }, [scene, color]);
 
+  useEffect(() => {
+    if (scene && groupRef.current) {
+      const box = new THREE.Box3().setFromObject(scene);
+      const center = box.getCenter(new THREE.Vector3());
+      const size = box.getSize(new THREE.Vector3());
+      
+      // Center the model
+      scene.position.sub(center);
+      groupRef.current.scale.set(1, 1, 1);
+      
+      console.log("3D_TRYON: Model bounds", { center, size });
+    }
+  }, [scene]);
+
   if (!scene) return null;
 
-  return <primitive object={scene} scale={3.0} position={[0, -2.5, 0]} />;
+  return (
+    <group ref={groupRef} scale={2.0} position={[0, 0, 0]}>
+      <primitive object={scene} />
+    </group>
+  );
 }
 
 export default function TryOnPage() {
@@ -168,16 +204,22 @@ export default function TryOnPage() {
                 return null;
               })()}
               {selectedProduct.modelUrl ? (
-                <div className="h-full w-full border-2 border-red-500/20" style={{ minHeight: '300px', pointerEvents: 'auto' }}>
+                <div className="h-full w-full" style={{ minHeight: '300px', pointerEvents: 'auto', background: '#f5f5f5' }}>
                   <Canvas 
                     key={selectedProduct.modelUrl}
-                    camera={{ position: [0, 0, 5], fov: 50 }}
-                    onCreated={({ gl }) => console.log("3D_TRYON: Canvas Created Successfully", !!gl)}
+                    camera={{ position: [0, 0, 3.5], fov: 60 }}
+                    onCreated={({ gl }) => {
+                      gl.setClearColor(0xf5f5f5);
+                      console.log("3D_TRYON: Canvas Created Successfully", !!gl);
+                    }}
                     onError={(err) => console.error("3D_TRYON: Canvas Critical Error", err)}
                   >
                     <Suspense fallback={<Html center><div className="text-white bg-black p-2">Loading Model...</div></Html>}>
-                      <ambientLight intensity={1.5} />
-                      <pointLight position={[10, 10, 10]} intensity={2} />
+                      <CameraController />
+                      <ambientLight intensity={2.2} />
+                      <pointLight position={[5, 5, 8]} intensity={3} />
+                      <pointLight position={[-5, 3, 5]} intensity={1.5} />
+                      <directionalLight position={[0, 5, 5]} intensity={1.8} />
                       <ModelOverlay url={selectedProduct.modelUrl} color={selectedColor} />
                     </Suspense>
                   </Canvas>
