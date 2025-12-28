@@ -18,7 +18,6 @@ export default function ProductDetailPage() {
   const { toast } = useToast();
   const [selectedSize, setSelectedSize] = useState<SizeKey | null>(null);
   const [selectedColor, setSelectedColor] = useState<string | null>(null);
-  const [viewMode, setViewMode] = useState<"2d" | "3d">("3d");
 
   const { data: product, isLoading } = useQuery<Product>({
     queryKey: ["/api/products", id],
@@ -85,7 +84,7 @@ export default function ProductDetailPage() {
         <div className="grid gap-12 lg:grid-cols-2">
           <div className="space-y-4">
             <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-muted to-muted/50">
-              {product.modelUrl && viewMode === "3d" ? (
+              {product.modelUrl ? (
                 <TShirtViewer modelUrl={product.modelUrl} />
               ) : (
                 <img
@@ -94,29 +93,6 @@ export default function ProductDetailPage() {
                   className="aspect-square w-full object-cover"
                   data-testid="img-product-main"
                 />
-              )}
-
-              {product.modelUrl && (
-                <div className="absolute top-4 right-4 flex gap-2">
-                  <Button
-                    size="sm"
-                    variant={viewMode === "3d" ? "default" : "secondary"}
-                    className="h-8 gap-2"
-                    onClick={() => setViewMode("3d")}
-                  >
-                    <Rotate3d className="h-4 w-4" />
-                    3D View
-                  </Button>
-                  <Button
-                    size="sm"
-                    variant={viewMode === "2d" ? "default" : "secondary"}
-                    className="h-8 gap-2"
-                    onClick={() => setViewMode("2d")}
-                  >
-                    <ImageIcon className="h-4 w-4" />
-                    Photo
-                  </Button>
-                </div>
               )}
             </div>
           </div>

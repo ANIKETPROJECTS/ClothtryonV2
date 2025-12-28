@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, Suspense } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { useLocation, useSearch, Link } from "wouter";
 import { Button } from "@/components/ui/button";
@@ -21,6 +21,14 @@ import { usePoseDetection } from "@/hooks/use-pose-detection";
 import { useCart } from "@/hooks/use-cart";
 import { useToast } from "@/hooks/use-toast";
 import type { Product, SizeKey } from "@shared/schema";
+import { Canvas } from "@react-three/fiber";
+import { useGLTF } from "@react-three/drei";
+
+function ModelOverlay({ url, color }: { url: string; color?: string | null }) {
+  const { scene } = useGLTF(url);
+  // Apply color to model if needed (simplified for now)
+  return <primitive object={scene} scale={1.5} />;
+}
 
 export default function TryOnPage() {
   const searchString = useSearch();
@@ -129,17 +137,29 @@ export default function TryOnPage() {
                 opacity: 0.9,
               }}
             >
-              <img
-                src={selectedProduct.imageUrl}
-                alt={selectedProduct.name}
-                className="h-full w-full object-fill"
-                style={{
-                  filter: selectedColor
-                    ? `drop-shadow(0 0 10px ${selectedColor}40)`
-                    : undefined,
-                  mixBlendMode: "multiply",
-                }}
-              />
+              {selectedProduct.modelUrl ? (
+                <div className="h-full w-full">
+                  <Canvas camera={{ position: [0, 0, 4], fov: 45 }}>
+                    <Suspense fallback={null}>
+                      <ambientLight intensity={0.5} />
+                      <pointLight position={[10, 10, 10]} />
+                      <ModelOverlay url={selectedProduct.modelUrl} color={selectedColor} />
+                    </Suspense>
+                  </Canvas>
+                </div>
+              ) : (
+                <img
+                  src={selectedProduct.imageUrl}
+                  alt={selectedProduct.name}
+                  className="h-full w-full object-fill"
+                  style={{
+                    filter: selectedColor
+                      ? `drop-shadow(0 0 10px ${selectedColor}40)`
+                      : undefined,
+                    mixBlendMode: "multiply",
+                  }}
+                />
+              )}
             </div>
           )}
 
