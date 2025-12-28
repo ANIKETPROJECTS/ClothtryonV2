@@ -1,5 +1,5 @@
 import React, { Suspense, useEffect } from "react";
-import { useGLTF, Html, useFBX } from "@react-three/drei";
+import { useGLTF, Html, useFBX, Center } from "@react-three/drei";
 import { Canvas, useThree } from "@react-three/fiber";
 
 function DebugCamera() {
@@ -44,19 +44,23 @@ function Model({ url }: { url: string }) {
 
   if (!model) return null;
 
-  return <primitive object={model} scale={0.05} position={[0, -1.5, 0]} />;
+  return (
+    <Center top>
+      <primitive object={model} scale={0.01} />
+    </Center>
+  );
 }
 
 export default function TShirtViewer({ modelUrl }: { modelUrl: string }) {
   console.log("3D_DEBUG: TShirtViewer rendered with modelUrl:", modelUrl);
   
   return (
-    <div className="w-full h-[500px] bg-[#111] rounded-lg overflow-hidden relative border-2 border-primary/20">
+    <div className="w-full h-full bg-transparent overflow-hidden relative">
       <ErrorBoundary fallback={<div className="p-4 text-destructive bg-background h-full flex items-center justify-center">Error rendering 3D model. Check console for details.</div>}>
         <Canvas 
           shadows 
           gl={{ antialias: true, alpha: true }}
-          camera={{ position: [0, 0, 5], fov: 50 }}
+          camera={{ position: [0, 0, 3], fov: 40 }}
           onCreated={({ gl, scene }) => {
             console.log("3D_DEBUG: Canvas created", {
               webgl: !!gl.getContext(),
@@ -66,18 +70,15 @@ export default function TShirtViewer({ modelUrl }: { modelUrl: string }) {
           onError={(error) => console.error("3D_DEBUG: Canvas error:", error)}
         >
           <DebugCamera />
-          <ambientLight intensity={2} />
-          <pointLight position={[10, 10, 10]} intensity={2.5} />
-          <directionalLight position={[-5, 5, 5]} intensity={1.5} />
+          <ambientLight intensity={1.5} />
+          <pointLight position={[10, 10, 10]} intensity={1.5} />
+          <directionalLight position={[-5, 5, 5]} intensity={1} />
           
           <Suspense fallback={<Html center><div className="text-white bg-black/50 p-2 rounded">Loading 3D Model...</div></Html>}>
             <Model url={modelUrl} />
           </Suspense>
         </Canvas>
       </ErrorBoundary>
-      <div className="absolute bottom-4 left-4 text-xs text-white bg-black/50 px-2 py-1 rounded">
-        {modelUrl ? "3D Model Active" : "No Model Found"}
-      </div>
     </div>
   );
 }
