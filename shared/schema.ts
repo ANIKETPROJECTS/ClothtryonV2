@@ -20,6 +20,7 @@ export const productSchema = z.object({
   sizes: z.array(z.enum(["S", "M", "L", "XL"])),
   colors: z.array(z.string()),
   imageUrl: z.string(),
+  modelUrl: z.string().optional(),
   category: z.enum(["tshirt", "hoodie"]),
   sizeChart: sizeChartSchema,
   inStock: z.boolean(),

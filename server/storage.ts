@@ -40,6 +40,7 @@ const sampleProducts: InsertProduct[] = [
     sizes: ["S", "M", "L", "XL"],
     colors: ["#000000", "#FFFFFF", "#3B82F6", "#EF4444"],
     imageUrl: "/attached_assets/1_1765646362966.png",
+    modelUrl: "/attached_assets/tshirt_1766937212463.glb",
     category: "tshirt",
     sizeChart: defaultSizeChart,
     inStock: true,
