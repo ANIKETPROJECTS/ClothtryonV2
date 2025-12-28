@@ -38,7 +38,7 @@ function CameraController() {
 
 function OBJModel({ url, color }: { url: string; color?: string | null }) {
   const [geometry, setGeometry] = React.useState<THREE.BufferGeometry | null>(null);
-  const groupRef = React.useRef<THREE.Group>(null);
+  const meshRef = React.useRef<THREE.Mesh>(null);
 
   useEffect(() => {
     if (!url) return;
@@ -46,36 +46,39 @@ function OBJModel({ url, color }: { url: string; color?: string | null }) {
     const loadOBJ = async () => {
       try {
         const response = await fetch(url);
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        
         const text = await response.text();
         const vertices: number[] = [];
         const faces: number[] = [];
 
         const lines = text.split('\n');
+        
         for (const line of lines) {
-          if (line.startsWith('v ')) {
-            const parts = line.substring(2).trim().split(/\s+/);
-            vertices.push(parseFloat(parts[0]), parseFloat(parts[1]), parseFloat(parts[2]));
-          } else if (line.startsWith('f ')) {
-            const parts = line.substring(2).trim().split(/\s+/);
+          const trimmed = line.trim();
+          if (trimmed.startsWith('v ')) {
+            const parts = trimmed.substring(2).split(/\s+/).filter(p => p);
+            if (parts.length >= 3) {
+              vertices.push(parseFloat(parts[0]), parseFloat(parts[1]), parseFloat(parts[2]));
+            }
+          } else if (trimmed.startsWith('f ')) {
+            const parts = trimmed.substring(2).split(/\s+/).filter(p => p);
             for (const part of parts) {
-              const vertexIndex = parseInt(part.split('/')[0]) - 1;
-              faces.push(vertexIndex);
+              const idx = parseInt(part.split('/')[0]) - 1;
+              if (!isNaN(idx) && idx >= 0) faces.push(idx);
             }
           }
         }
 
-        if (vertices.length > 0) {
+        if (vertices.length > 0 && faces.length > 0) {
           const geo = new THREE.BufferGeometry();
           geo.setAttribute('position', new THREE.BufferAttribute(new Float32Array(vertices), 3));
-          if (faces.length > 0) {
-            geo.setIndex(new THREE.BufferAttribute(new Uint32Array(faces), 1));
-          }
+          geo.setIndex(new THREE.BufferAttribute(new Uint32Array(faces), 1));
           geo.computeVertexNormals();
           setGeometry(geo);
-          console.log("3D_TRYON: OBJ loaded", { vertexCount: vertices.length / 3, faceCount: faces.length / 3 });
         }
       } catch (error) {
-        console.error("3D_TRYON: Failed to load OBJ", error);
+        console.error("Failed to load OBJ:", error);
       }
     };
 
@@ -83,13 +86,18 @@ function OBJModel({ url, color }: { url: string; color?: string | null }) {
   }, [url]);
 
   if (!geometry) {
-    return <group />;
+    return null;
   }
 
   return (
-    <group ref={groupRef} scale={2.5} position={[0, -0.2, 0]}>
-      <mesh geometry={geometry}>
-        <meshStandardMaterial color={color || "#000000"} wireframe={false} />
+    <group scale={2.5} position={[0, -0.2, 0]}>
+      <mesh ref={meshRef} geometry={geometry} castShadow receiveShadow>
+        <meshStandardMaterial 
+          color={color || "#000000"} 
+          side={THREE.DoubleSide}
+          roughness={0.6}
+          metalness={0.2}
+        />
       </mesh>
     </group>
   );
@@ -229,14 +237,12 @@ export default function TryOnPage() {
                     }}
                     onError={(err) => console.error("3D_TRYON: Canvas Critical Error", err)}
                   >
-                    <Suspense fallback={<Html center><div className="text-white bg-black p-2">Loading Model...</div></Html>}>
-                      <CameraController />
-                      <ambientLight intensity={2.2} />
-                      <pointLight position={[5, 5, 8]} intensity={3} />
-                      <pointLight position={[-5, 3, 5]} intensity={1.5} />
-                      <directionalLight position={[0, 5, 5]} intensity={1.8} />
-                      <ModelOverlay url={selectedProduct.modelUrl} color={selectedColor} />
-                    </Suspense>
+                    <CameraController />
+                    <ambientLight intensity={2.2} />
+                    <pointLight position={[5, 5, 8]} intensity={3} />
+                    <pointLight position={[-5, 3, 5]} intensity={1.5} />
+                    <directionalLight position={[0, 5, 5]} intensity={1.8} />
+                    <ModelOverlay url={selectedProduct.modelUrl} color={selectedColor} />
                   </Canvas>
                 </div>
               ) : (
