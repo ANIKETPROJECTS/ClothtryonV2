@@ -169,8 +169,8 @@ function FBXModel({ url, color }: { url: string; color?: string | null }) {
   if (!fbx) return null;
 
   return (
-    <Center top>
-      <primitive object={fbx} scale={0.08} />
+    <Center>
+      <primitive object={fbx} scale={0.01} />
     </Center>
   );
 }
