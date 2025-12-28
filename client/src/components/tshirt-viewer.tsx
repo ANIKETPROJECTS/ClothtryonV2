@@ -12,7 +12,7 @@ export default function TShirtViewer({ modelUrl }: { modelUrl: string }) {
     <div className="w-full h-[500px] bg-muted/30 rounded-lg overflow-hidden relative">
       <Canvas shadows camera={{ position: [0, 0, 4], fov: 45 }}>
         <Suspense fallback={null}>
-          <Stage environment="city" intensity={0.6} contactShadow={false}>
+          <Stage environment="city" intensity={0.6}>
             <PresentationControls
               global
               zoom={0.8}
