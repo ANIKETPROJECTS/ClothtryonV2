@@ -1,5 +1,5 @@
 import React, { Suspense, useEffect } from "react";
-import { useGLTF, Html } from "@react-three/drei";
+import { useGLTF, Html, useFBX } from "@react-three/drei";
 import { Canvas, useThree } from "@react-three/fiber";
 
 function DebugCamera() {
@@ -18,12 +18,13 @@ function DebugCamera() {
 
 function Model({ url }: { url: string }) {
   console.log("3D_DEBUG: Model component mounted with URL:", url);
-  const { scene } = useGLTF(url);
+  const isFBX = url.toLowerCase().endsWith(".fbx");
+  const model = isFBX ? useFBX(url) : useGLTF(url).scene;
   
   useEffect(() => {
-    if (scene) {
-      console.log("3D_DEBUG: Model scene object ready:", scene);
-      scene.traverse((child) => {
+    if (model) {
+      console.log("3D_DEBUG: Model object ready:", model);
+      model.traverse((child) => {
         if ((child as any).isMesh) {
           console.log("3D_DEBUG: Mesh found in scene:", child.name);
           const mesh = child as any;
@@ -37,13 +38,13 @@ function Model({ url }: { url: string }) {
         }
       });
     } else {
-      console.warn("3D_DEBUG: Model scene is null or undefined");
+      console.warn("3D_DEBUG: Model is null or undefined");
     }
-  }, [scene]);
+  }, [model]);
 
-  if (!scene) return null;
+  if (!model) return null;
 
-  return <primitive object={scene} scale={2.5} position={[0, -1.5, 0]} />;
+  return <primitive object={model} scale={0.05} position={[0, -1.5, 0]} />;
 }
 
 export default function TShirtViewer({ modelUrl }: { modelUrl: string }) {
