@@ -36,27 +36,68 @@ function CameraController() {
   return null;
 }
 
-function TestBox({ color }: { color?: string | null }) {
-  const meshRef = React.useRef<THREE.Mesh>(null);
-  
+function OBJModel({ url, color }: { url: string; color?: string | null }) {
+  const [geometry, setGeometry] = React.useState<THREE.BufferGeometry | null>(null);
+  const groupRef = React.useRef<THREE.Group>(null);
+
   useEffect(() => {
-    if (meshRef.current && color) {
-      (meshRef.current.material as THREE.MeshStandardMaterial).color.set(color);
-    }
-  }, [color]);
+    if (!url) return;
+
+    // Simple OBJ parser - just create vertices from OBJ file
+    const loadOBJ = async () => {
+      try {
+        const response = await fetch(url);
+        const text = await response.text();
+        const vertices: number[] = [];
+        const faces: number[] = [];
+
+        const lines = text.split('\n');
+        for (const line of lines) {
+          if (line.startsWith('v ')) {
+            const parts = line.substring(2).trim().split(/\s+/);
+            vertices.push(parseFloat(parts[0]), parseFloat(parts[1]), parseFloat(parts[2]));
+          } else if (line.startsWith('f ')) {
+            const parts = line.substring(2).trim().split(/\s+/);
+            for (const part of parts) {
+              const vertexIndex = parseInt(part.split('/')[0]) - 1;
+              faces.push(vertexIndex);
+            }
+          }
+        }
+
+        if (vertices.length > 0) {
+          const geo = new THREE.BufferGeometry();
+          geo.setAttribute('position', new THREE.BufferAttribute(new Float32Array(vertices), 3));
+          if (faces.length > 0) {
+            geo.setIndex(new THREE.BufferAttribute(new Uint32Array(faces), 1));
+          }
+          geo.computeVertexNormals();
+          setGeometry(geo);
+          console.log("3D_TRYON: OBJ loaded", { vertexCount: vertices.length / 3, faceCount: faces.length / 3 });
+        }
+      } catch (error) {
+        console.error("3D_TRYON: Failed to load OBJ", error);
+      }
+    };
+
+    loadOBJ();
+  }, [url]);
+
+  if (!geometry) {
+    return null;
+  }
 
   return (
-    <mesh ref={meshRef} scale={[1.5, 2, 0.5]}>
-      <boxGeometry args={[1, 1, 1]} />
-      <meshStandardMaterial color={color || "#000000"} />
-    </mesh>
+    <group ref={groupRef} scale={0.03} position={[0, -1, 0]}>
+      <mesh geometry={geometry}>
+        <meshStandardMaterial color={color || "#000000"} />
+      </mesh>
+    </group>
   );
 }
 
 function ModelContent({ url, color }: { url: string; color?: string | null }) {
-  // Currently rendering test box while GLB loading is fixed
-  // TODO: Replace with actual GLB model once working
-  return <TestBox color={color} />;
+  return <OBJModel url={url} color={color} />;
 }
 
 function ModelOverlay({ url, color }: { url: string; color?: string | null }) {
