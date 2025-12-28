@@ -1,0 +1,1156 @@
+chunk-RPCDYKBN.js?v=a4ce5413:21551 Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools
+use-pose-detection.ts:132 The powerPreference option is currently ignored when calling requestAdapter() on Windows. See https://crbug.com/369219127
+(anonymous) @ @tensorflow-models_pose-detection.js?v=a4ce5413:4255
+initializeBackend @ chunk-M35T4XKH.js?v=a4ce5413:3857
+ready @ chunk-M35T4XKH.js?v=a4ce5413:3760
+ready @ chunk-M35T4XKH.js?v=a4ce5413:4766
+(anonymous) @ use-pose-detection.ts:132
+(anonymous) @ use-pose-detection.ts:302
+callCallback2 @ chunk-RPCDYKBN.js?v=a4ce5413:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=a4ce5413:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=a4ce5413:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=a4ce5413:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=a4ce5413:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=a4ce5413:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=a4ce5413:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=a4ce5413:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=a4ce5413:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=a4ce5413:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=a4ce5413:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=a4ce5413:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=a4ce5413:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=a4ce5413:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=a4ce5413:5449
+try-on.tsx:316 3D_TRYON: Checking product {id: '6596a3f7-a944-4ecb-8920-210eac5cd272', hasModel: true, url: '/t_shirt.fbx'}
+try-on.tsx:316 3D_TRYON: Checking product {id: '6596a3f7-a944-4ecb-8920-210eac5cd272', hasModel: true, url: '/t_shirt.fbx'}
+try-on.tsx:200 3D_TRYON: ModelOverlay rendering with URL: /t_shirt.fbx
+try-on.tsx:107 3D_TRYON: ModelContent loading URL: /t_shirt.fbx
+try-on.tsx:113 3D_TRYON: Using FBX path for /t_shirt.fbx
+try-on.tsx:130 3D_TRYON: FBXModel component mounting for /t_shirt.fbx
+try-on.tsx:330 3D_TRYON: Canvas Created Successfully true
+try-on.tsx:316 3D_TRYON: Checking product {id: '6596a3f7-a944-4ecb-8920-210eac5cd272', hasModel: true, url: '/t_shirt.fbx'}
+try-on.tsx:200 3D_TRYON: ModelOverlay rendering with URL: /t_shirt.fbx
+try-on.tsx:107 3D_TRYON: ModelContent loading URL: /t_shirt.fbx
+try-on.tsx:113 3D_TRYON: Using FBX path for /t_shirt.fbx
+try-on.tsx:130 3D_TRYON: FBXModel component mounting for /t_shirt.fbx
+try-on.tsx:131 THREE.FBXLoader: AmbientColor map is not supported in three.js, skipping texture.
+(anonymous) @ @react-three_drei.js?v=a4ce5413:37040
+parseParameters @ @react-three_drei.js?v=a4ce5413:36976
+parseMaterial @ @react-three_drei.js?v=a4ce5413:36917
+parseMaterials @ @react-three_drei.js?v=a4ce5413:36898
+parse @ @react-three_drei.js?v=a4ce5413:36722
+parse @ @react-three_drei.js?v=a4ce5413:36710
+(anonymous) @ @react-three_drei.js?v=a4ce5413:36682
+(anonymous) @ chunk-OTHSB3H2.js?v=a4ce5413:25490
+Promise.then
+load @ chunk-OTHSB3H2.js?v=a4ce5413:25484
+load @ @react-three_drei.js?v=a4ce5413:36678
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+query @ chunk-RPJNFG3C.js?v=a4ce5413:16210
+suspend @ chunk-RPJNFG3C.js?v=a4ce5413:16222
+useLoader @ chunk-RPJNFG3C.js?v=a4ce5413:17536
+useFBX @ @react-three_drei.js?v=a4ce5413:93479
+FBXModel @ try-on.tsx:131
+renderWithHooks @ chunk-RPJNFG3C.js?v=a4ce5413:5896
+mountIndeterminateComponent @ chunk-RPJNFG3C.js?v=a4ce5413:9379
+beginWork @ chunk-RPJNFG3C.js?v=a4ce5413:10362
+beginWork$1 @ chunk-RPJNFG3C.js?v=a4ce5413:14192
+performUnitOfWork @ chunk-RPJNFG3C.js?v=a4ce5413:13668
+workLoopSync @ chunk-RPJNFG3C.js?v=a4ce5413:13608
+renderRootSync @ chunk-RPJNFG3C.js?v=a4ce5413:13587
+performConcurrentWorkOnRoot @ chunk-RPJNFG3C.js?v=a4ce5413:13119
+workLoop @ chunk-RPJNFG3C.js?v=a4ce5413:278
+flushWork @ chunk-RPJNFG3C.js?v=a4ce5413:257
+performWorkUntilDeadline @ chunk-RPJNFG3C.js?v=a4ce5413:465
+try-on.tsx:131 THREE.FBXLoader: AmbientColor map is not supported in three.js, skipping texture.
+(anonymous) @ @react-three_drei.js?v=a4ce5413:37040
+parseParameters @ @react-three_drei.js?v=a4ce5413:36976
+parseMaterial @ @react-three_drei.js?v=a4ce5413:36917
+parseMaterials @ @react-three_drei.js?v=a4ce5413:36898
+parse @ @react-three_drei.js?v=a4ce5413:36722
+parse @ @react-three_drei.js?v=a4ce5413:36710
+(anonymous) @ @react-three_drei.js?v=a4ce5413:36682
+(anonymous) @ chunk-OTHSB3H2.js?v=a4ce5413:25490
+Promise.then
+load @ chunk-OTHSB3H2.js?v=a4ce5413:25484
+load @ @react-three_drei.js?v=a4ce5413:36678
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+query @ chunk-RPJNFG3C.js?v=a4ce5413:16210
+suspend @ chunk-RPJNFG3C.js?v=a4ce5413:16222
+useLoader @ chunk-RPJNFG3C.js?v=a4ce5413:17536
+useFBX @ @react-three_drei.js?v=a4ce5413:93479
+FBXModel @ try-on.tsx:131
+renderWithHooks @ chunk-RPJNFG3C.js?v=a4ce5413:5896
+mountIndeterminateComponent @ chunk-RPJNFG3C.js?v=a4ce5413:9379
+beginWork @ chunk-RPJNFG3C.js?v=a4ce5413:10362
+beginWork$1 @ chunk-RPJNFG3C.js?v=a4ce5413:14192
+performUnitOfWork @ chunk-RPJNFG3C.js?v=a4ce5413:13668
+workLoopSync @ chunk-RPJNFG3C.js?v=a4ce5413:13608
+renderRootSync @ chunk-RPJNFG3C.js?v=a4ce5413:13587
+performConcurrentWorkOnRoot @ chunk-RPJNFG3C.js?v=a4ce5413:13119
+workLoop @ chunk-RPJNFG3C.js?v=a4ce5413:278
+flushWork @ chunk-RPJNFG3C.js?v=a4ce5413:257
+performWorkUntilDeadline @ chunk-RPJNFG3C.js?v=a4ce5413:465
+try-on.tsx:131 THREE.FBXLoader: AmbientColor map is not supported in three.js, skipping texture.
+(anonymous) @ @react-three_drei.js?v=a4ce5413:37040
+parseParameters @ @react-three_drei.js?v=a4ce5413:36976
+parseMaterial @ @react-three_drei.js?v=a4ce5413:36917
+parseMaterials @ @react-three_drei.js?v=a4ce5413:36898
+parse @ @react-three_drei.js?v=a4ce5413:36722
+parse @ @react-three_drei.js?v=a4ce5413:36710
+(anonymous) @ @react-three_drei.js?v=a4ce5413:36682
+(anonymous) @ chunk-OTHSB3H2.js?v=a4ce5413:25490
+Promise.then
+load @ chunk-OTHSB3H2.js?v=a4ce5413:25484
+load @ @react-three_drei.js?v=a4ce5413:36678
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+query @ chunk-RPJNFG3C.js?v=a4ce5413:16210
+suspend @ chunk-RPJNFG3C.js?v=a4ce5413:16222
+useLoader @ chunk-RPJNFG3C.js?v=a4ce5413:17536
+useFBX @ @react-three_drei.js?v=a4ce5413:93479
+FBXModel @ try-on.tsx:131
+renderWithHooks @ chunk-RPJNFG3C.js?v=a4ce5413:5896
+mountIndeterminateComponent @ chunk-RPJNFG3C.js?v=a4ce5413:9379
+beginWork @ chunk-RPJNFG3C.js?v=a4ce5413:10362
+beginWork$1 @ chunk-RPJNFG3C.js?v=a4ce5413:14192
+performUnitOfWork @ chunk-RPJNFG3C.js?v=a4ce5413:13668
+workLoopSync @ chunk-RPJNFG3C.js?v=a4ce5413:13608
+renderRootSync @ chunk-RPJNFG3C.js?v=a4ce5413:13587
+performConcurrentWorkOnRoot @ chunk-RPJNFG3C.js?v=a4ce5413:13119
+workLoop @ chunk-RPJNFG3C.js?v=a4ce5413:278
+flushWork @ chunk-RPJNFG3C.js?v=a4ce5413:257
+performWorkUntilDeadline @ chunk-RPJNFG3C.js?v=a4ce5413:465
+try-on.tsx:131 THREE.FBXLoader: AmbientColor map is not supported in three.js, skipping texture.
+(anonymous) @ @react-three_drei.js?v=a4ce5413:37040
+parseParameters @ @react-three_drei.js?v=a4ce5413:36976
+parseMaterial @ @react-three_drei.js?v=a4ce5413:36917
+parseMaterials @ @react-three_drei.js?v=a4ce5413:36898
+parse @ @react-three_drei.js?v=a4ce5413:36722
+parse @ @react-three_drei.js?v=a4ce5413:36710
+(anonymous) @ @react-three_drei.js?v=a4ce5413:36682
+(anonymous) @ chunk-OTHSB3H2.js?v=a4ce5413:25490
+Promise.then
+load @ chunk-OTHSB3H2.js?v=a4ce5413:25484
+load @ @react-three_drei.js?v=a4ce5413:36678
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+query @ chunk-RPJNFG3C.js?v=a4ce5413:16210
+suspend @ chunk-RPJNFG3C.js?v=a4ce5413:16222
+useLoader @ chunk-RPJNFG3C.js?v=a4ce5413:17536
+useFBX @ @react-three_drei.js?v=a4ce5413:93479
+FBXModel @ try-on.tsx:131
+renderWithHooks @ chunk-RPJNFG3C.js?v=a4ce5413:5896
+mountIndeterminateComponent @ chunk-RPJNFG3C.js?v=a4ce5413:9379
+beginWork @ chunk-RPJNFG3C.js?v=a4ce5413:10362
+beginWork$1 @ chunk-RPJNFG3C.js?v=a4ce5413:14192
+performUnitOfWork @ chunk-RPJNFG3C.js?v=a4ce5413:13668
+workLoopSync @ chunk-RPJNFG3C.js?v=a4ce5413:13608
+renderRootSync @ chunk-RPJNFG3C.js?v=a4ce5413:13587
+performConcurrentWorkOnRoot @ chunk-RPJNFG3C.js?v=a4ce5413:13119
+workLoop @ chunk-RPJNFG3C.js?v=a4ce5413:278
+flushWork @ chunk-RPJNFG3C.js?v=a4ce5413:257
+performWorkUntilDeadline @ chunk-RPJNFG3C.js?v=a4ce5413:465
+try-on.tsx:131 THREE.FBXLoader: AmbientColor map is not supported in three.js, skipping texture.
+(anonymous) @ @react-three_drei.js?v=a4ce5413:37040
+parseParameters @ @react-three_drei.js?v=a4ce5413:36976
+parseMaterial @ @react-three_drei.js?v=a4ce5413:36917
+parseMaterials @ @react-three_drei.js?v=a4ce5413:36898
+parse @ @react-three_drei.js?v=a4ce5413:36722
+parse @ @react-three_drei.js?v=a4ce5413:36710
+(anonymous) @ @react-three_drei.js?v=a4ce5413:36682
+(anonymous) @ chunk-OTHSB3H2.js?v=a4ce5413:25490
+Promise.then
+load @ chunk-OTHSB3H2.js?v=a4ce5413:25484
+load @ @react-three_drei.js?v=a4ce5413:36678
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+query @ chunk-RPJNFG3C.js?v=a4ce5413:16210
+suspend @ chunk-RPJNFG3C.js?v=a4ce5413:16222
+useLoader @ chunk-RPJNFG3C.js?v=a4ce5413:17536
+useFBX @ @react-three_drei.js?v=a4ce5413:93479
+FBXModel @ try-on.tsx:131
+renderWithHooks @ chunk-RPJNFG3C.js?v=a4ce5413:5896
+mountIndeterminateComponent @ chunk-RPJNFG3C.js?v=a4ce5413:9379
+beginWork @ chunk-RPJNFG3C.js?v=a4ce5413:10362
+beginWork$1 @ chunk-RPJNFG3C.js?v=a4ce5413:14192
+performUnitOfWork @ chunk-RPJNFG3C.js?v=a4ce5413:13668
+workLoopSync @ chunk-RPJNFG3C.js?v=a4ce5413:13608
+renderRootSync @ chunk-RPJNFG3C.js?v=a4ce5413:13587
+performConcurrentWorkOnRoot @ chunk-RPJNFG3C.js?v=a4ce5413:13119
+workLoop @ chunk-RPJNFG3C.js?v=a4ce5413:278
+flushWork @ chunk-RPJNFG3C.js?v=a4ce5413:257
+performWorkUntilDeadline @ chunk-RPJNFG3C.js?v=a4ce5413:465
+try-on.tsx:131 THREE.FBXLoader: AmbientColor map is not supported in three.js, skipping texture.
+(anonymous) @ @react-three_drei.js?v=a4ce5413:37040
+parseParameters @ @react-three_drei.js?v=a4ce5413:36976
+parseMaterial @ @react-three_drei.js?v=a4ce5413:36917
+parseMaterials @ @react-three_drei.js?v=a4ce5413:36898
+parse @ @react-three_drei.js?v=a4ce5413:36722
+parse @ @react-three_drei.js?v=a4ce5413:36710
+(anonymous) @ @react-three_drei.js?v=a4ce5413:36682
+(anonymous) @ chunk-OTHSB3H2.js?v=a4ce5413:25490
+Promise.then
+load @ chunk-OTHSB3H2.js?v=a4ce5413:25484
+load @ @react-three_drei.js?v=a4ce5413:36678
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+query @ chunk-RPJNFG3C.js?v=a4ce5413:16210
+suspend @ chunk-RPJNFG3C.js?v=a4ce5413:16222
+useLoader @ chunk-RPJNFG3C.js?v=a4ce5413:17536
+useFBX @ @react-three_drei.js?v=a4ce5413:93479
+FBXModel @ try-on.tsx:131
+renderWithHooks @ chunk-RPJNFG3C.js?v=a4ce5413:5896
+mountIndeterminateComponent @ chunk-RPJNFG3C.js?v=a4ce5413:9379
+beginWork @ chunk-RPJNFG3C.js?v=a4ce5413:10362
+beginWork$1 @ chunk-RPJNFG3C.js?v=a4ce5413:14192
+performUnitOfWork @ chunk-RPJNFG3C.js?v=a4ce5413:13668
+workLoopSync @ chunk-RPJNFG3C.js?v=a4ce5413:13608
+renderRootSync @ chunk-RPJNFG3C.js?v=a4ce5413:13587
+performConcurrentWorkOnRoot @ chunk-RPJNFG3C.js?v=a4ce5413:13119
+workLoop @ chunk-RPJNFG3C.js?v=a4ce5413:278
+flushWork @ chunk-RPJNFG3C.js?v=a4ce5413:257
+performWorkUntilDeadline @ chunk-RPJNFG3C.js?v=a4ce5413:465
+try-on.tsx:131 THREE.FBXLoader: AmbientColor map is not supported in three.js, skipping texture.
+(anonymous) @ @react-three_drei.js?v=a4ce5413:37040
+parseParameters @ @react-three_drei.js?v=a4ce5413:36976
+parseMaterial @ @react-three_drei.js?v=a4ce5413:36917
+parseMaterials @ @react-three_drei.js?v=a4ce5413:36898
+parse @ @react-three_drei.js?v=a4ce5413:36722
+parse @ @react-three_drei.js?v=a4ce5413:36710
+(anonymous) @ @react-three_drei.js?v=a4ce5413:36682
+(anonymous) @ chunk-OTHSB3H2.js?v=a4ce5413:25490
+Promise.then
+load @ chunk-OTHSB3H2.js?v=a4ce5413:25484
+load @ @react-three_drei.js?v=a4ce5413:36678
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+query @ chunk-RPJNFG3C.js?v=a4ce5413:16210
+suspend @ chunk-RPJNFG3C.js?v=a4ce5413:16222
+useLoader @ chunk-RPJNFG3C.js?v=a4ce5413:17536
+useFBX @ @react-three_drei.js?v=a4ce5413:93479
+FBXModel @ try-on.tsx:131
+renderWithHooks @ chunk-RPJNFG3C.js?v=a4ce5413:5896
+mountIndeterminateComponent @ chunk-RPJNFG3C.js?v=a4ce5413:9379
+beginWork @ chunk-RPJNFG3C.js?v=a4ce5413:10362
+beginWork$1 @ chunk-RPJNFG3C.js?v=a4ce5413:14192
+performUnitOfWork @ chunk-RPJNFG3C.js?v=a4ce5413:13668
+workLoopSync @ chunk-RPJNFG3C.js?v=a4ce5413:13608
+renderRootSync @ chunk-RPJNFG3C.js?v=a4ce5413:13587
+performConcurrentWorkOnRoot @ chunk-RPJNFG3C.js?v=a4ce5413:13119
+workLoop @ chunk-RPJNFG3C.js?v=a4ce5413:278
+flushWork @ chunk-RPJNFG3C.js?v=a4ce5413:257
+performWorkUntilDeadline @ chunk-RPJNFG3C.js?v=a4ce5413:465
+try-on.tsx:131 THREE.FBXLoader: AmbientColor map is not supported in three.js, skipping texture.
+(anonymous) @ @react-three_drei.js?v=a4ce5413:37040
+parseParameters @ @react-three_drei.js?v=a4ce5413:36976
+parseMaterial @ @react-three_drei.js?v=a4ce5413:36917
+parseMaterials @ @react-three_drei.js?v=a4ce5413:36898
+parse @ @react-three_drei.js?v=a4ce5413:36722
+parse @ @react-three_drei.js?v=a4ce5413:36710
+(anonymous) @ @react-three_drei.js?v=a4ce5413:36682
+(anonymous) @ chunk-OTHSB3H2.js?v=a4ce5413:25490
+Promise.then
+load @ chunk-OTHSB3H2.js?v=a4ce5413:25484
+load @ @react-three_drei.js?v=a4ce5413:36678
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+query @ chunk-RPJNFG3C.js?v=a4ce5413:16210
+suspend @ chunk-RPJNFG3C.js?v=a4ce5413:16222
+useLoader @ chunk-RPJNFG3C.js?v=a4ce5413:17536
+useFBX @ @react-three_drei.js?v=a4ce5413:93479
+FBXModel @ try-on.tsx:131
+renderWithHooks @ chunk-RPJNFG3C.js?v=a4ce5413:5896
+mountIndeterminateComponent @ chunk-RPJNFG3C.js?v=a4ce5413:9379
+beginWork @ chunk-RPJNFG3C.js?v=a4ce5413:10362
+beginWork$1 @ chunk-RPJNFG3C.js?v=a4ce5413:14192
+performUnitOfWork @ chunk-RPJNFG3C.js?v=a4ce5413:13668
+workLoopSync @ chunk-RPJNFG3C.js?v=a4ce5413:13608
+renderRootSync @ chunk-RPJNFG3C.js?v=a4ce5413:13587
+performConcurrentWorkOnRoot @ chunk-RPJNFG3C.js?v=a4ce5413:13119
+workLoop @ chunk-RPJNFG3C.js?v=a4ce5413:278
+flushWork @ chunk-RPJNFG3C.js?v=a4ce5413:257
+performWorkUntilDeadline @ chunk-RPJNFG3C.js?v=a4ce5413:465
+try-on.tsx:131 THREE.FBXLoader: AmbientColor map is not supported in three.js, skipping texture.
+(anonymous) @ @react-three_drei.js?v=a4ce5413:37040
+parseParameters @ @react-three_drei.js?v=a4ce5413:36976
+parseMaterial @ @react-three_drei.js?v=a4ce5413:36917
+parseMaterials @ @react-three_drei.js?v=a4ce5413:36898
+parse @ @react-three_drei.js?v=a4ce5413:36722
+parse @ @react-three_drei.js?v=a4ce5413:36710
+(anonymous) @ @react-three_drei.js?v=a4ce5413:36682
+(anonymous) @ chunk-OTHSB3H2.js?v=a4ce5413:25490
+Promise.then
+load @ chunk-OTHSB3H2.js?v=a4ce5413:25484
+load @ @react-three_drei.js?v=a4ce5413:36678
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+query @ chunk-RPJNFG3C.js?v=a4ce5413:16210
+suspend @ chunk-RPJNFG3C.js?v=a4ce5413:16222
+useLoader @ chunk-RPJNFG3C.js?v=a4ce5413:17536
+useFBX @ @react-three_drei.js?v=a4ce5413:93479
+FBXModel @ try-on.tsx:131
+renderWithHooks @ chunk-RPJNFG3C.js?v=a4ce5413:5896
+mountIndeterminateComponent @ chunk-RPJNFG3C.js?v=a4ce5413:9379
+beginWork @ chunk-RPJNFG3C.js?v=a4ce5413:10362
+beginWork$1 @ chunk-RPJNFG3C.js?v=a4ce5413:14192
+performUnitOfWork @ chunk-RPJNFG3C.js?v=a4ce5413:13668
+workLoopSync @ chunk-RPJNFG3C.js?v=a4ce5413:13608
+renderRootSync @ chunk-RPJNFG3C.js?v=a4ce5413:13587
+performConcurrentWorkOnRoot @ chunk-RPJNFG3C.js?v=a4ce5413:13119
+workLoop @ chunk-RPJNFG3C.js?v=a4ce5413:278
+flushWork @ chunk-RPJNFG3C.js?v=a4ce5413:257
+performWorkUntilDeadline @ chunk-RPJNFG3C.js?v=a4ce5413:465
+try-on.tsx:131 THREE.FBXLoader: AmbientColor map is not supported in three.js, skipping texture.
+(anonymous) @ @react-three_drei.js?v=a4ce5413:37040
+parseParameters @ @react-three_drei.js?v=a4ce5413:36976
+parseMaterial @ @react-three_drei.js?v=a4ce5413:36917
+parseMaterials @ @react-three_drei.js?v=a4ce5413:36898
+parse @ @react-three_drei.js?v=a4ce5413:36722
+parse @ @react-three_drei.js?v=a4ce5413:36710
+(anonymous) @ @react-three_drei.js?v=a4ce5413:36682
+(anonymous) @ chunk-OTHSB3H2.js?v=a4ce5413:25490
+Promise.then
+load @ chunk-OTHSB3H2.js?v=a4ce5413:25484
+load @ @react-three_drei.js?v=a4ce5413:36678
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+query @ chunk-RPJNFG3C.js?v=a4ce5413:16210
+suspend @ chunk-RPJNFG3C.js?v=a4ce5413:16222
+useLoader @ chunk-RPJNFG3C.js?v=a4ce5413:17536
+useFBX @ @react-three_drei.js?v=a4ce5413:93479
+FBXModel @ try-on.tsx:131
+renderWithHooks @ chunk-RPJNFG3C.js?v=a4ce5413:5896
+mountIndeterminateComponent @ chunk-RPJNFG3C.js?v=a4ce5413:9379
+beginWork @ chunk-RPJNFG3C.js?v=a4ce5413:10362
+beginWork$1 @ chunk-RPJNFG3C.js?v=a4ce5413:14192
+performUnitOfWork @ chunk-RPJNFG3C.js?v=a4ce5413:13668
+workLoopSync @ chunk-RPJNFG3C.js?v=a4ce5413:13608
+renderRootSync @ chunk-RPJNFG3C.js?v=a4ce5413:13587
+performConcurrentWorkOnRoot @ chunk-RPJNFG3C.js?v=a4ce5413:13119
+workLoop @ chunk-RPJNFG3C.js?v=a4ce5413:278
+flushWork @ chunk-RPJNFG3C.js?v=a4ce5413:257
+performWorkUntilDeadline @ chunk-RPJNFG3C.js?v=a4ce5413:465
+try-on.tsx:131 THREE.FBXLoader: AmbientColor map is not supported in three.js, skipping texture.
+(anonymous) @ @react-three_drei.js?v=a4ce5413:37040
+parseParameters @ @react-three_drei.js?v=a4ce5413:36976
+parseMaterial @ @react-three_drei.js?v=a4ce5413:36917
+parseMaterials @ @react-three_drei.js?v=a4ce5413:36898
+parse @ @react-three_drei.js?v=a4ce5413:36722
+parse @ @react-three_drei.js?v=a4ce5413:36710
+(anonymous) @ @react-three_drei.js?v=a4ce5413:36682
+(anonymous) @ chunk-OTHSB3H2.js?v=a4ce5413:25490
+Promise.then
+load @ chunk-OTHSB3H2.js?v=a4ce5413:25484
+load @ @react-three_drei.js?v=a4ce5413:36678
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+query @ chunk-RPJNFG3C.js?v=a4ce5413:16210
+suspend @ chunk-RPJNFG3C.js?v=a4ce5413:16222
+useLoader @ chunk-RPJNFG3C.js?v=a4ce5413:17536
+useFBX @ @react-three_drei.js?v=a4ce5413:93479
+FBXModel @ try-on.tsx:131
+renderWithHooks @ chunk-RPJNFG3C.js?v=a4ce5413:5896
+mountIndeterminateComponent @ chunk-RPJNFG3C.js?v=a4ce5413:9379
+beginWork @ chunk-RPJNFG3C.js?v=a4ce5413:10362
+beginWork$1 @ chunk-RPJNFG3C.js?v=a4ce5413:14192
+performUnitOfWork @ chunk-RPJNFG3C.js?v=a4ce5413:13668
+workLoopSync @ chunk-RPJNFG3C.js?v=a4ce5413:13608
+renderRootSync @ chunk-RPJNFG3C.js?v=a4ce5413:13587
+performConcurrentWorkOnRoot @ chunk-RPJNFG3C.js?v=a4ce5413:13119
+workLoop @ chunk-RPJNFG3C.js?v=a4ce5413:278
+flushWork @ chunk-RPJNFG3C.js?v=a4ce5413:257
+performWorkUntilDeadline @ chunk-RPJNFG3C.js?v=a4ce5413:465
+try-on.tsx:131 THREE.FBXLoader: AmbientColor map is not supported in three.js, skipping texture.
+(anonymous) @ @react-three_drei.js?v=a4ce5413:37040
+parseParameters @ @react-three_drei.js?v=a4ce5413:36976
+parseMaterial @ @react-three_drei.js?v=a4ce5413:36917
+parseMaterials @ @react-three_drei.js?v=a4ce5413:36898
+parse @ @react-three_drei.js?v=a4ce5413:36722
+parse @ @react-three_drei.js?v=a4ce5413:36710
+(anonymous) @ @react-three_drei.js?v=a4ce5413:36682
+(anonymous) @ chunk-OTHSB3H2.js?v=a4ce5413:25490
+Promise.then
+load @ chunk-OTHSB3H2.js?v=a4ce5413:25484
+load @ @react-three_drei.js?v=a4ce5413:36678
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+query @ chunk-RPJNFG3C.js?v=a4ce5413:16210
+suspend @ chunk-RPJNFG3C.js?v=a4ce5413:16222
+useLoader @ chunk-RPJNFG3C.js?v=a4ce5413:17536
+useFBX @ @react-three_drei.js?v=a4ce5413:93479
+FBXModel @ try-on.tsx:131
+renderWithHooks @ chunk-RPJNFG3C.js?v=a4ce5413:5896
+mountIndeterminateComponent @ chunk-RPJNFG3C.js?v=a4ce5413:9379
+beginWork @ chunk-RPJNFG3C.js?v=a4ce5413:10362
+beginWork$1 @ chunk-RPJNFG3C.js?v=a4ce5413:14192
+performUnitOfWork @ chunk-RPJNFG3C.js?v=a4ce5413:13668
+workLoopSync @ chunk-RPJNFG3C.js?v=a4ce5413:13608
+renderRootSync @ chunk-RPJNFG3C.js?v=a4ce5413:13587
+performConcurrentWorkOnRoot @ chunk-RPJNFG3C.js?v=a4ce5413:13119
+workLoop @ chunk-RPJNFG3C.js?v=a4ce5413:278
+flushWork @ chunk-RPJNFG3C.js?v=a4ce5413:257
+performWorkUntilDeadline @ chunk-RPJNFG3C.js?v=a4ce5413:465
+try-on.tsx:131 THREE.FBXLoader: AmbientColor map is not supported in three.js, skipping texture.
+(anonymous) @ @react-three_drei.js?v=a4ce5413:37040
+parseParameters @ @react-three_drei.js?v=a4ce5413:36976
+parseMaterial @ @react-three_drei.js?v=a4ce5413:36917
+parseMaterials @ @react-three_drei.js?v=a4ce5413:36898
+parse @ @react-three_drei.js?v=a4ce5413:36722
+parse @ @react-three_drei.js?v=a4ce5413:36710
+(anonymous) @ @react-three_drei.js?v=a4ce5413:36682
+(anonymous) @ chunk-OTHSB3H2.js?v=a4ce5413:25490
+Promise.then
+load @ chunk-OTHSB3H2.js?v=a4ce5413:25484
+load @ @react-three_drei.js?v=a4ce5413:36678
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+query @ chunk-RPJNFG3C.js?v=a4ce5413:16210
+suspend @ chunk-RPJNFG3C.js?v=a4ce5413:16222
+useLoader @ chunk-RPJNFG3C.js?v=a4ce5413:17536
+useFBX @ @react-three_drei.js?v=a4ce5413:93479
+FBXModel @ try-on.tsx:131
+renderWithHooks @ chunk-RPJNFG3C.js?v=a4ce5413:5896
+mountIndeterminateComponent @ chunk-RPJNFG3C.js?v=a4ce5413:9379
+beginWork @ chunk-RPJNFG3C.js?v=a4ce5413:10362
+beginWork$1 @ chunk-RPJNFG3C.js?v=a4ce5413:14192
+performUnitOfWork @ chunk-RPJNFG3C.js?v=a4ce5413:13668
+workLoopSync @ chunk-RPJNFG3C.js?v=a4ce5413:13608
+renderRootSync @ chunk-RPJNFG3C.js?v=a4ce5413:13587
+performConcurrentWorkOnRoot @ chunk-RPJNFG3C.js?v=a4ce5413:13119
+workLoop @ chunk-RPJNFG3C.js?v=a4ce5413:278
+flushWork @ chunk-RPJNFG3C.js?v=a4ce5413:257
+performWorkUntilDeadline @ chunk-RPJNFG3C.js?v=a4ce5413:465
+try-on.tsx:131 THREE.FBXLoader: AmbientColor map is not supported in three.js, skipping texture.
+(anonymous) @ @react-three_drei.js?v=a4ce5413:37040
+parseParameters @ @react-three_drei.js?v=a4ce5413:36976
+parseMaterial @ @react-three_drei.js?v=a4ce5413:36917
+parseMaterials @ @react-three_drei.js?v=a4ce5413:36898
+parse @ @react-three_drei.js?v=a4ce5413:36722
+parse @ @react-three_drei.js?v=a4ce5413:36710
+(anonymous) @ @react-three_drei.js?v=a4ce5413:36682
+(anonymous) @ chunk-OTHSB3H2.js?v=a4ce5413:25490
+Promise.then
+load @ chunk-OTHSB3H2.js?v=a4ce5413:25484
+load @ @react-three_drei.js?v=a4ce5413:36678
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+query @ chunk-RPJNFG3C.js?v=a4ce5413:16210
+suspend @ chunk-RPJNFG3C.js?v=a4ce5413:16222
+useLoader @ chunk-RPJNFG3C.js?v=a4ce5413:17536
+useFBX @ @react-three_drei.js?v=a4ce5413:93479
+FBXModel @ try-on.tsx:131
+renderWithHooks @ chunk-RPJNFG3C.js?v=a4ce5413:5896
+mountIndeterminateComponent @ chunk-RPJNFG3C.js?v=a4ce5413:9379
+beginWork @ chunk-RPJNFG3C.js?v=a4ce5413:10362
+beginWork$1 @ chunk-RPJNFG3C.js?v=a4ce5413:14192
+performUnitOfWork @ chunk-RPJNFG3C.js?v=a4ce5413:13668
+workLoopSync @ chunk-RPJNFG3C.js?v=a4ce5413:13608
+renderRootSync @ chunk-RPJNFG3C.js?v=a4ce5413:13587
+performConcurrentWorkOnRoot @ chunk-RPJNFG3C.js?v=a4ce5413:13119
+workLoop @ chunk-RPJNFG3C.js?v=a4ce5413:278
+flushWork @ chunk-RPJNFG3C.js?v=a4ce5413:257
+performWorkUntilDeadline @ chunk-RPJNFG3C.js?v=a4ce5413:465
+try-on.tsx:131 THREE.FBXLoader: AmbientColor map is not supported in three.js, skipping texture.
+(anonymous) @ @react-three_drei.js?v=a4ce5413:37040
+parseParameters @ @react-three_drei.js?v=a4ce5413:36976
+parseMaterial @ @react-three_drei.js?v=a4ce5413:36917
+parseMaterials @ @react-three_drei.js?v=a4ce5413:36898
+parse @ @react-three_drei.js?v=a4ce5413:36722
+parse @ @react-three_drei.js?v=a4ce5413:36710
+(anonymous) @ @react-three_drei.js?v=a4ce5413:36682
+(anonymous) @ chunk-OTHSB3H2.js?v=a4ce5413:25490
+Promise.then
+load @ chunk-OTHSB3H2.js?v=a4ce5413:25484
+load @ @react-three_drei.js?v=a4ce5413:36678
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+query @ chunk-RPJNFG3C.js?v=a4ce5413:16210
+suspend @ chunk-RPJNFG3C.js?v=a4ce5413:16222
+useLoader @ chunk-RPJNFG3C.js?v=a4ce5413:17536
+useFBX @ @react-three_drei.js?v=a4ce5413:93479
+FBXModel @ try-on.tsx:131
+renderWithHooks @ chunk-RPJNFG3C.js?v=a4ce5413:5896
+mountIndeterminateComponent @ chunk-RPJNFG3C.js?v=a4ce5413:9379
+beginWork @ chunk-RPJNFG3C.js?v=a4ce5413:10362
+beginWork$1 @ chunk-RPJNFG3C.js?v=a4ce5413:14192
+performUnitOfWork @ chunk-RPJNFG3C.js?v=a4ce5413:13668
+workLoopSync @ chunk-RPJNFG3C.js?v=a4ce5413:13608
+renderRootSync @ chunk-RPJNFG3C.js?v=a4ce5413:13587
+performConcurrentWorkOnRoot @ chunk-RPJNFG3C.js?v=a4ce5413:13119
+workLoop @ chunk-RPJNFG3C.js?v=a4ce5413:278
+flushWork @ chunk-RPJNFG3C.js?v=a4ce5413:257
+performWorkUntilDeadline @ chunk-RPJNFG3C.js?v=a4ce5413:465
+try-on.tsx:131 THREE.FBXLoader: AmbientColor map is not supported in three.js, skipping texture.
+(anonymous) @ @react-three_drei.js?v=a4ce5413:37040
+parseParameters @ @react-three_drei.js?v=a4ce5413:36976
+parseMaterial @ @react-three_drei.js?v=a4ce5413:36917
+parseMaterials @ @react-three_drei.js?v=a4ce5413:36898
+parse @ @react-three_drei.js?v=a4ce5413:36722
+parse @ @react-three_drei.js?v=a4ce5413:36710
+(anonymous) @ @react-three_drei.js?v=a4ce5413:36682
+(anonymous) @ chunk-OTHSB3H2.js?v=a4ce5413:25490
+Promise.then
+load @ chunk-OTHSB3H2.js?v=a4ce5413:25484
+load @ @react-three_drei.js?v=a4ce5413:36678
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+query @ chunk-RPJNFG3C.js?v=a4ce5413:16210
+suspend @ chunk-RPJNFG3C.js?v=a4ce5413:16222
+useLoader @ chunk-RPJNFG3C.js?v=a4ce5413:17536
+useFBX @ @react-three_drei.js?v=a4ce5413:93479
+FBXModel @ try-on.tsx:131
+renderWithHooks @ chunk-RPJNFG3C.js?v=a4ce5413:5896
+mountIndeterminateComponent @ chunk-RPJNFG3C.js?v=a4ce5413:9379
+beginWork @ chunk-RPJNFG3C.js?v=a4ce5413:10362
+beginWork$1 @ chunk-RPJNFG3C.js?v=a4ce5413:14192
+performUnitOfWork @ chunk-RPJNFG3C.js?v=a4ce5413:13668
+workLoopSync @ chunk-RPJNFG3C.js?v=a4ce5413:13608
+renderRootSync @ chunk-RPJNFG3C.js?v=a4ce5413:13587
+performConcurrentWorkOnRoot @ chunk-RPJNFG3C.js?v=a4ce5413:13119
+workLoop @ chunk-RPJNFG3C.js?v=a4ce5413:278
+flushWork @ chunk-RPJNFG3C.js?v=a4ce5413:257
+performWorkUntilDeadline @ chunk-RPJNFG3C.js?v=a4ce5413:465
+try-on.tsx:131 THREE.FBXLoader: AmbientColor map is not supported in three.js, skipping texture.
+(anonymous) @ @react-three_drei.js?v=a4ce5413:37040
+parseParameters @ @react-three_drei.js?v=a4ce5413:36976
+parseMaterial @ @react-three_drei.js?v=a4ce5413:36917
+parseMaterials @ @react-three_drei.js?v=a4ce5413:36898
+parse @ @react-three_drei.js?v=a4ce5413:36722
+parse @ @react-three_drei.js?v=a4ce5413:36710
+(anonymous) @ @react-three_drei.js?v=a4ce5413:36682
+(anonymous) @ chunk-OTHSB3H2.js?v=a4ce5413:25490
+Promise.then
+load @ chunk-OTHSB3H2.js?v=a4ce5413:25484
+load @ @react-three_drei.js?v=a4ce5413:36678
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+query @ chunk-RPJNFG3C.js?v=a4ce5413:16210
+suspend @ chunk-RPJNFG3C.js?v=a4ce5413:16222
+useLoader @ chunk-RPJNFG3C.js?v=a4ce5413:17536
+useFBX @ @react-three_drei.js?v=a4ce5413:93479
+FBXModel @ try-on.tsx:131
+renderWithHooks @ chunk-RPJNFG3C.js?v=a4ce5413:5896
+mountIndeterminateComponent @ chunk-RPJNFG3C.js?v=a4ce5413:9379
+beginWork @ chunk-RPJNFG3C.js?v=a4ce5413:10362
+beginWork$1 @ chunk-RPJNFG3C.js?v=a4ce5413:14192
+performUnitOfWork @ chunk-RPJNFG3C.js?v=a4ce5413:13668
+workLoopSync @ chunk-RPJNFG3C.js?v=a4ce5413:13608
+renderRootSync @ chunk-RPJNFG3C.js?v=a4ce5413:13587
+performConcurrentWorkOnRoot @ chunk-RPJNFG3C.js?v=a4ce5413:13119
+workLoop @ chunk-RPJNFG3C.js?v=a4ce5413:278
+flushWork @ chunk-RPJNFG3C.js?v=a4ce5413:257
+performWorkUntilDeadline @ chunk-RPJNFG3C.js?v=a4ce5413:465
+try-on.tsx:131 THREE.FBXLoader: AmbientColor map is not supported in three.js, skipping texture.
+(anonymous) @ @react-three_drei.js?v=a4ce5413:37040
+parseParameters @ @react-three_drei.js?v=a4ce5413:36976
+parseMaterial @ @react-three_drei.js?v=a4ce5413:36917
+parseMaterials @ @react-three_drei.js?v=a4ce5413:36898
+parse @ @react-three_drei.js?v=a4ce5413:36722
+parse @ @react-three_drei.js?v=a4ce5413:36710
+(anonymous) @ @react-three_drei.js?v=a4ce5413:36682
+(anonymous) @ chunk-OTHSB3H2.js?v=a4ce5413:25490
+Promise.then
+load @ chunk-OTHSB3H2.js?v=a4ce5413:25484
+load @ @react-three_drei.js?v=a4ce5413:36678
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+query @ chunk-RPJNFG3C.js?v=a4ce5413:16210
+suspend @ chunk-RPJNFG3C.js?v=a4ce5413:16222
+useLoader @ chunk-RPJNFG3C.js?v=a4ce5413:17536
+useFBX @ @react-three_drei.js?v=a4ce5413:93479
+FBXModel @ try-on.tsx:131
+renderWithHooks @ chunk-RPJNFG3C.js?v=a4ce5413:5896
+mountIndeterminateComponent @ chunk-RPJNFG3C.js?v=a4ce5413:9379
+beginWork @ chunk-RPJNFG3C.js?v=a4ce5413:10362
+beginWork$1 @ chunk-RPJNFG3C.js?v=a4ce5413:14192
+performUnitOfWork @ chunk-RPJNFG3C.js?v=a4ce5413:13668
+workLoopSync @ chunk-RPJNFG3C.js?v=a4ce5413:13608
+renderRootSync @ chunk-RPJNFG3C.js?v=a4ce5413:13587
+performConcurrentWorkOnRoot @ chunk-RPJNFG3C.js?v=a4ce5413:13119
+workLoop @ chunk-RPJNFG3C.js?v=a4ce5413:278
+flushWork @ chunk-RPJNFG3C.js?v=a4ce5413:257
+performWorkUntilDeadline @ chunk-RPJNFG3C.js?v=a4ce5413:465
+try-on.tsx:131 THREE.FBXLoader: AmbientColor map is not supported in three.js, skipping texture.
+(anonymous) @ @react-three_drei.js?v=a4ce5413:37040
+parseParameters @ @react-three_drei.js?v=a4ce5413:36976
+parseMaterial @ @react-three_drei.js?v=a4ce5413:36917
+parseMaterials @ @react-three_drei.js?v=a4ce5413:36898
+parse @ @react-three_drei.js?v=a4ce5413:36722
+parse @ @react-three_drei.js?v=a4ce5413:36710
+(anonymous) @ @react-three_drei.js?v=a4ce5413:36682
+(anonymous) @ chunk-OTHSB3H2.js?v=a4ce5413:25490
+Promise.then
+load @ chunk-OTHSB3H2.js?v=a4ce5413:25484
+load @ @react-three_drei.js?v=a4ce5413:36678
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+query @ chunk-RPJNFG3C.js?v=a4ce5413:16210
+suspend @ chunk-RPJNFG3C.js?v=a4ce5413:16222
+useLoader @ chunk-RPJNFG3C.js?v=a4ce5413:17536
+useFBX @ @react-three_drei.js?v=a4ce5413:93479
+FBXModel @ try-on.tsx:131
+renderWithHooks @ chunk-RPJNFG3C.js?v=a4ce5413:5896
+mountIndeterminateComponent @ chunk-RPJNFG3C.js?v=a4ce5413:9379
+beginWork @ chunk-RPJNFG3C.js?v=a4ce5413:10362
+beginWork$1 @ chunk-RPJNFG3C.js?v=a4ce5413:14192
+performUnitOfWork @ chunk-RPJNFG3C.js?v=a4ce5413:13668
+workLoopSync @ chunk-RPJNFG3C.js?v=a4ce5413:13608
+renderRootSync @ chunk-RPJNFG3C.js?v=a4ce5413:13587
+performConcurrentWorkOnRoot @ chunk-RPJNFG3C.js?v=a4ce5413:13119
+workLoop @ chunk-RPJNFG3C.js?v=a4ce5413:278
+flushWork @ chunk-RPJNFG3C.js?v=a4ce5413:257
+performWorkUntilDeadline @ chunk-RPJNFG3C.js?v=a4ce5413:465
+try-on.tsx:131 THREE.FBXLoader: AmbientColor map is not supported in three.js, skipping texture.
+(anonymous) @ @react-three_drei.js?v=a4ce5413:37040
+parseParameters @ @react-three_drei.js?v=a4ce5413:36976
+parseMaterial @ @react-three_drei.js?v=a4ce5413:36917
+parseMaterials @ @react-three_drei.js?v=a4ce5413:36898
+parse @ @react-three_drei.js?v=a4ce5413:36722
+parse @ @react-three_drei.js?v=a4ce5413:36710
+(anonymous) @ @react-three_drei.js?v=a4ce5413:36682
+(anonymous) @ chunk-OTHSB3H2.js?v=a4ce5413:25490
+Promise.then
+load @ chunk-OTHSB3H2.js?v=a4ce5413:25484
+load @ @react-three_drei.js?v=a4ce5413:36678
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+query @ chunk-RPJNFG3C.js?v=a4ce5413:16210
+suspend @ chunk-RPJNFG3C.js?v=a4ce5413:16222
+useLoader @ chunk-RPJNFG3C.js?v=a4ce5413:17536
+useFBX @ @react-three_drei.js?v=a4ce5413:93479
+FBXModel @ try-on.tsx:131
+renderWithHooks @ chunk-RPJNFG3C.js?v=a4ce5413:5896
+mountIndeterminateComponent @ chunk-RPJNFG3C.js?v=a4ce5413:9379
+beginWork @ chunk-RPJNFG3C.js?v=a4ce5413:10362
+beginWork$1 @ chunk-RPJNFG3C.js?v=a4ce5413:14192
+performUnitOfWork @ chunk-RPJNFG3C.js?v=a4ce5413:13668
+workLoopSync @ chunk-RPJNFG3C.js?v=a4ce5413:13608
+renderRootSync @ chunk-RPJNFG3C.js?v=a4ce5413:13587
+performConcurrentWorkOnRoot @ chunk-RPJNFG3C.js?v=a4ce5413:13119
+workLoop @ chunk-RPJNFG3C.js?v=a4ce5413:278
+flushWork @ chunk-RPJNFG3C.js?v=a4ce5413:257
+performWorkUntilDeadline @ chunk-RPJNFG3C.js?v=a4ce5413:465
+try-on.tsx:131 THREE.FBXLoader: AmbientColor map is not supported in three.js, skipping texture.
+(anonymous) @ @react-three_drei.js?v=a4ce5413:37040
+parseParameters @ @react-three_drei.js?v=a4ce5413:36976
+parseMaterial @ @react-three_drei.js?v=a4ce5413:36917
+parseMaterials @ @react-three_drei.js?v=a4ce5413:36898
+parse @ @react-three_drei.js?v=a4ce5413:36722
+parse @ @react-three_drei.js?v=a4ce5413:36710
+(anonymous) @ @react-three_drei.js?v=a4ce5413:36682
+(anonymous) @ chunk-OTHSB3H2.js?v=a4ce5413:25490
+Promise.then
+load @ chunk-OTHSB3H2.js?v=a4ce5413:25484
+load @ @react-three_drei.js?v=a4ce5413:36678
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+query @ chunk-RPJNFG3C.js?v=a4ce5413:16210
+suspend @ chunk-RPJNFG3C.js?v=a4ce5413:16222
+useLoader @ chunk-RPJNFG3C.js?v=a4ce5413:17536
+useFBX @ @react-three_drei.js?v=a4ce5413:93479
+FBXModel @ try-on.tsx:131
+renderWithHooks @ chunk-RPJNFG3C.js?v=a4ce5413:5896
+mountIndeterminateComponent @ chunk-RPJNFG3C.js?v=a4ce5413:9379
+beginWork @ chunk-RPJNFG3C.js?v=a4ce5413:10362
+beginWork$1 @ chunk-RPJNFG3C.js?v=a4ce5413:14192
+performUnitOfWork @ chunk-RPJNFG3C.js?v=a4ce5413:13668
+workLoopSync @ chunk-RPJNFG3C.js?v=a4ce5413:13608
+renderRootSync @ chunk-RPJNFG3C.js?v=a4ce5413:13587
+performConcurrentWorkOnRoot @ chunk-RPJNFG3C.js?v=a4ce5413:13119
+workLoop @ chunk-RPJNFG3C.js?v=a4ce5413:278
+flushWork @ chunk-RPJNFG3C.js?v=a4ce5413:257
+performWorkUntilDeadline @ chunk-RPJNFG3C.js?v=a4ce5413:465
+try-on.tsx:131 THREE.FBXLoader: AmbientColor map is not supported in three.js, skipping texture.
+(anonymous) @ @react-three_drei.js?v=a4ce5413:37040
+parseParameters @ @react-three_drei.js?v=a4ce5413:36976
+parseMaterial @ @react-three_drei.js?v=a4ce5413:36917
+parseMaterials @ @react-three_drei.js?v=a4ce5413:36898
+parse @ @react-three_drei.js?v=a4ce5413:36722
+parse @ @react-three_drei.js?v=a4ce5413:36710
+(anonymous) @ @react-three_drei.js?v=a4ce5413:36682
+(anonymous) @ chunk-OTHSB3H2.js?v=a4ce5413:25490
+Promise.then
+load @ chunk-OTHSB3H2.js?v=a4ce5413:25484
+load @ @react-three_drei.js?v=a4ce5413:36678
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+query @ chunk-RPJNFG3C.js?v=a4ce5413:16210
+suspend @ chunk-RPJNFG3C.js?v=a4ce5413:16222
+useLoader @ chunk-RPJNFG3C.js?v=a4ce5413:17536
+useFBX @ @react-three_drei.js?v=a4ce5413:93479
+FBXModel @ try-on.tsx:131
+renderWithHooks @ chunk-RPJNFG3C.js?v=a4ce5413:5896
+mountIndeterminateComponent @ chunk-RPJNFG3C.js?v=a4ce5413:9379
+beginWork @ chunk-RPJNFG3C.js?v=a4ce5413:10362
+beginWork$1 @ chunk-RPJNFG3C.js?v=a4ce5413:14192
+performUnitOfWork @ chunk-RPJNFG3C.js?v=a4ce5413:13668
+workLoopSync @ chunk-RPJNFG3C.js?v=a4ce5413:13608
+renderRootSync @ chunk-RPJNFG3C.js?v=a4ce5413:13587
+performConcurrentWorkOnRoot @ chunk-RPJNFG3C.js?v=a4ce5413:13119
+workLoop @ chunk-RPJNFG3C.js?v=a4ce5413:278
+flushWork @ chunk-RPJNFG3C.js?v=a4ce5413:257
+performWorkUntilDeadline @ chunk-RPJNFG3C.js?v=a4ce5413:465
+try-on.tsx:131 THREE.FBXLoader: AmbientColor map is not supported in three.js, skipping texture.
+(anonymous) @ @react-three_drei.js?v=a4ce5413:37040
+parseParameters @ @react-three_drei.js?v=a4ce5413:36976
+parseMaterial @ @react-three_drei.js?v=a4ce5413:36917
+parseMaterials @ @react-three_drei.js?v=a4ce5413:36898
+parse @ @react-three_drei.js?v=a4ce5413:36722
+parse @ @react-three_drei.js?v=a4ce5413:36710
+(anonymous) @ @react-three_drei.js?v=a4ce5413:36682
+(anonymous) @ chunk-OTHSB3H2.js?v=a4ce5413:25490
+Promise.then
+load @ chunk-OTHSB3H2.js?v=a4ce5413:25484
+load @ @react-three_drei.js?v=a4ce5413:36678
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+query @ chunk-RPJNFG3C.js?v=a4ce5413:16210
+suspend @ chunk-RPJNFG3C.js?v=a4ce5413:16222
+useLoader @ chunk-RPJNFG3C.js?v=a4ce5413:17536
+useFBX @ @react-three_drei.js?v=a4ce5413:93479
+FBXModel @ try-on.tsx:131
+renderWithHooks @ chunk-RPJNFG3C.js?v=a4ce5413:5896
+mountIndeterminateComponent @ chunk-RPJNFG3C.js?v=a4ce5413:9379
+beginWork @ chunk-RPJNFG3C.js?v=a4ce5413:10362
+beginWork$1 @ chunk-RPJNFG3C.js?v=a4ce5413:14192
+performUnitOfWork @ chunk-RPJNFG3C.js?v=a4ce5413:13668
+workLoopSync @ chunk-RPJNFG3C.js?v=a4ce5413:13608
+renderRootSync @ chunk-RPJNFG3C.js?v=a4ce5413:13587
+performConcurrentWorkOnRoot @ chunk-RPJNFG3C.js?v=a4ce5413:13119
+workLoop @ chunk-RPJNFG3C.js?v=a4ce5413:278
+flushWork @ chunk-RPJNFG3C.js?v=a4ce5413:257
+performWorkUntilDeadline @ chunk-RPJNFG3C.js?v=a4ce5413:465
+try-on.tsx:131 THREE.FBXLoader: AmbientColor map is not supported in three.js, skipping texture.
+(anonymous) @ @react-three_drei.js?v=a4ce5413:37040
+parseParameters @ @react-three_drei.js?v=a4ce5413:36976
+parseMaterial @ @react-three_drei.js?v=a4ce5413:36917
+parseMaterials @ @react-three_drei.js?v=a4ce5413:36898
+parse @ @react-three_drei.js?v=a4ce5413:36722
+parse @ @react-three_drei.js?v=a4ce5413:36710
+(anonymous) @ @react-three_drei.js?v=a4ce5413:36682
+(anonymous) @ chunk-OTHSB3H2.js?v=a4ce5413:25490
+Promise.then
+load @ chunk-OTHSB3H2.js?v=a4ce5413:25484
+load @ @react-three_drei.js?v=a4ce5413:36678
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+query @ chunk-RPJNFG3C.js?v=a4ce5413:16210
+suspend @ chunk-RPJNFG3C.js?v=a4ce5413:16222
+useLoader @ chunk-RPJNFG3C.js?v=a4ce5413:17536
+useFBX @ @react-three_drei.js?v=a4ce5413:93479
+FBXModel @ try-on.tsx:131
+renderWithHooks @ chunk-RPJNFG3C.js?v=a4ce5413:5896
+mountIndeterminateComponent @ chunk-RPJNFG3C.js?v=a4ce5413:9379
+beginWork @ chunk-RPJNFG3C.js?v=a4ce5413:10362
+beginWork$1 @ chunk-RPJNFG3C.js?v=a4ce5413:14192
+performUnitOfWork @ chunk-RPJNFG3C.js?v=a4ce5413:13668
+workLoopSync @ chunk-RPJNFG3C.js?v=a4ce5413:13608
+renderRootSync @ chunk-RPJNFG3C.js?v=a4ce5413:13587
+performConcurrentWorkOnRoot @ chunk-RPJNFG3C.js?v=a4ce5413:13119
+workLoop @ chunk-RPJNFG3C.js?v=a4ce5413:278
+flushWork @ chunk-RPJNFG3C.js?v=a4ce5413:257
+performWorkUntilDeadline @ chunk-RPJNFG3C.js?v=a4ce5413:465
+try-on.tsx:131 THREE.FBXLoader: AmbientColor map is not supported in three.js, skipping texture.
+(anonymous) @ @react-three_drei.js?v=a4ce5413:37040
+parseParameters @ @react-three_drei.js?v=a4ce5413:36976
+parseMaterial @ @react-three_drei.js?v=a4ce5413:36917
+parseMaterials @ @react-three_drei.js?v=a4ce5413:36898
+parse @ @react-three_drei.js?v=a4ce5413:36722
+parse @ @react-three_drei.js?v=a4ce5413:36710
+(anonymous) @ @react-three_drei.js?v=a4ce5413:36682
+(anonymous) @ chunk-OTHSB3H2.js?v=a4ce5413:25490
+Promise.then
+load @ chunk-OTHSB3H2.js?v=a4ce5413:25484
+load @ @react-three_drei.js?v=a4ce5413:36678
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+query @ chunk-RPJNFG3C.js?v=a4ce5413:16210
+suspend @ chunk-RPJNFG3C.js?v=a4ce5413:16222
+useLoader @ chunk-RPJNFG3C.js?v=a4ce5413:17536
+useFBX @ @react-three_drei.js?v=a4ce5413:93479
+FBXModel @ try-on.tsx:131
+renderWithHooks @ chunk-RPJNFG3C.js?v=a4ce5413:5896
+mountIndeterminateComponent @ chunk-RPJNFG3C.js?v=a4ce5413:9379
+beginWork @ chunk-RPJNFG3C.js?v=a4ce5413:10362
+beginWork$1 @ chunk-RPJNFG3C.js?v=a4ce5413:14192
+performUnitOfWork @ chunk-RPJNFG3C.js?v=a4ce5413:13668
+workLoopSync @ chunk-RPJNFG3C.js?v=a4ce5413:13608
+renderRootSync @ chunk-RPJNFG3C.js?v=a4ce5413:13587
+performConcurrentWorkOnRoot @ chunk-RPJNFG3C.js?v=a4ce5413:13119
+workLoop @ chunk-RPJNFG3C.js?v=a4ce5413:278
+flushWork @ chunk-RPJNFG3C.js?v=a4ce5413:257
+performWorkUntilDeadline @ chunk-RPJNFG3C.js?v=a4ce5413:465
+try-on.tsx:131 THREE.FBXLoader: AmbientColor map is not supported in three.js, skipping texture.
+(anonymous) @ @react-three_drei.js?v=a4ce5413:37040
+parseParameters @ @react-three_drei.js?v=a4ce5413:36976
+parseMaterial @ @react-three_drei.js?v=a4ce5413:36917
+parseMaterials @ @react-three_drei.js?v=a4ce5413:36898
+parse @ @react-three_drei.js?v=a4ce5413:36722
+parse @ @react-three_drei.js?v=a4ce5413:36710
+(anonymous) @ @react-three_drei.js?v=a4ce5413:36682
+(anonymous) @ chunk-OTHSB3H2.js?v=a4ce5413:25490
+Promise.then
+load @ chunk-OTHSB3H2.js?v=a4ce5413:25484
+load @ @react-three_drei.js?v=a4ce5413:36678
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+query @ chunk-RPJNFG3C.js?v=a4ce5413:16210
+suspend @ chunk-RPJNFG3C.js?v=a4ce5413:16222
+useLoader @ chunk-RPJNFG3C.js?v=a4ce5413:17536
+useFBX @ @react-three_drei.js?v=a4ce5413:93479
+FBXModel @ try-on.tsx:131
+renderWithHooks @ chunk-RPJNFG3C.js?v=a4ce5413:5896
+mountIndeterminateComponent @ chunk-RPJNFG3C.js?v=a4ce5413:9379
+beginWork @ chunk-RPJNFG3C.js?v=a4ce5413:10362
+beginWork$1 @ chunk-RPJNFG3C.js?v=a4ce5413:14192
+performUnitOfWork @ chunk-RPJNFG3C.js?v=a4ce5413:13668
+workLoopSync @ chunk-RPJNFG3C.js?v=a4ce5413:13608
+renderRootSync @ chunk-RPJNFG3C.js?v=a4ce5413:13587
+performConcurrentWorkOnRoot @ chunk-RPJNFG3C.js?v=a4ce5413:13119
+workLoop @ chunk-RPJNFG3C.js?v=a4ce5413:278
+flushWork @ chunk-RPJNFG3C.js?v=a4ce5413:257
+performWorkUntilDeadline @ chunk-RPJNFG3C.js?v=a4ce5413:465
+try-on.tsx:131 THREE.FBXLoader: AmbientColor map is not supported in three.js, skipping texture.
+(anonymous) @ @react-three_drei.js?v=a4ce5413:37040
+parseParameters @ @react-three_drei.js?v=a4ce5413:36976
+parseMaterial @ @react-three_drei.js?v=a4ce5413:36917
+parseMaterials @ @react-three_drei.js?v=a4ce5413:36898
+parse @ @react-three_drei.js?v=a4ce5413:36722
+parse @ @react-three_drei.js?v=a4ce5413:36710
+(anonymous) @ @react-three_drei.js?v=a4ce5413:36682
+(anonymous) @ chunk-OTHSB3H2.js?v=a4ce5413:25490
+Promise.then
+load @ chunk-OTHSB3H2.js?v=a4ce5413:25484
+load @ @react-three_drei.js?v=a4ce5413:36678
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+query @ chunk-RPJNFG3C.js?v=a4ce5413:16210
+suspend @ chunk-RPJNFG3C.js?v=a4ce5413:16222
+useLoader @ chunk-RPJNFG3C.js?v=a4ce5413:17536
+useFBX @ @react-three_drei.js?v=a4ce5413:93479
+FBXModel @ try-on.tsx:131
+renderWithHooks @ chunk-RPJNFG3C.js?v=a4ce5413:5896
+mountIndeterminateComponent @ chunk-RPJNFG3C.js?v=a4ce5413:9379
+beginWork @ chunk-RPJNFG3C.js?v=a4ce5413:10362
+beginWork$1 @ chunk-RPJNFG3C.js?v=a4ce5413:14192
+performUnitOfWork @ chunk-RPJNFG3C.js?v=a4ce5413:13668
+workLoopSync @ chunk-RPJNFG3C.js?v=a4ce5413:13608
+renderRootSync @ chunk-RPJNFG3C.js?v=a4ce5413:13587
+performConcurrentWorkOnRoot @ chunk-RPJNFG3C.js?v=a4ce5413:13119
+workLoop @ chunk-RPJNFG3C.js?v=a4ce5413:278
+flushWork @ chunk-RPJNFG3C.js?v=a4ce5413:257
+performWorkUntilDeadline @ chunk-RPJNFG3C.js?v=a4ce5413:465
+try-on.tsx:131 THREE.FBXLoader: AmbientColor map is not supported in three.js, skipping texture.
+(anonymous) @ @react-three_drei.js?v=a4ce5413:37040
+parseParameters @ @react-three_drei.js?v=a4ce5413:36976
+parseMaterial @ @react-three_drei.js?v=a4ce5413:36917
+parseMaterials @ @react-three_drei.js?v=a4ce5413:36898
+parse @ @react-three_drei.js?v=a4ce5413:36722
+parse @ @react-three_drei.js?v=a4ce5413:36710
+(anonymous) @ @react-three_drei.js?v=a4ce5413:36682
+(anonymous) @ chunk-OTHSB3H2.js?v=a4ce5413:25490
+Promise.then
+load @ chunk-OTHSB3H2.js?v=a4ce5413:25484
+load @ @react-three_drei.js?v=a4ce5413:36678
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+query @ chunk-RPJNFG3C.js?v=a4ce5413:16210
+suspend @ chunk-RPJNFG3C.js?v=a4ce5413:16222
+useLoader @ chunk-RPJNFG3C.js?v=a4ce5413:17536
+useFBX @ @react-three_drei.js?v=a4ce5413:93479
+FBXModel @ try-on.tsx:131
+renderWithHooks @ chunk-RPJNFG3C.js?v=a4ce5413:5896
+mountIndeterminateComponent @ chunk-RPJNFG3C.js?v=a4ce5413:9379
+beginWork @ chunk-RPJNFG3C.js?v=a4ce5413:10362
+beginWork$1 @ chunk-RPJNFG3C.js?v=a4ce5413:14192
+performUnitOfWork @ chunk-RPJNFG3C.js?v=a4ce5413:13668
+workLoopSync @ chunk-RPJNFG3C.js?v=a4ce5413:13608
+renderRootSync @ chunk-RPJNFG3C.js?v=a4ce5413:13587
+performConcurrentWorkOnRoot @ chunk-RPJNFG3C.js?v=a4ce5413:13119
+workLoop @ chunk-RPJNFG3C.js?v=a4ce5413:278
+flushWork @ chunk-RPJNFG3C.js?v=a4ce5413:257
+performWorkUntilDeadline @ chunk-RPJNFG3C.js?v=a4ce5413:465
+try-on.tsx:131 THREE.FBXLoader: AmbientColor map is not supported in three.js, skipping texture.
+(anonymous) @ @react-three_drei.js?v=a4ce5413:37040
+parseParameters @ @react-three_drei.js?v=a4ce5413:36976
+parseMaterial @ @react-three_drei.js?v=a4ce5413:36917
+parseMaterials @ @react-three_drei.js?v=a4ce5413:36898
+parse @ @react-three_drei.js?v=a4ce5413:36722
+parse @ @react-three_drei.js?v=a4ce5413:36710
+(anonymous) @ @react-three_drei.js?v=a4ce5413:36682
+(anonymous) @ chunk-OTHSB3H2.js?v=a4ce5413:25490
+Promise.then
+load @ chunk-OTHSB3H2.js?v=a4ce5413:25484
+load @ @react-three_drei.js?v=a4ce5413:36678
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+query @ chunk-RPJNFG3C.js?v=a4ce5413:16210
+suspend @ chunk-RPJNFG3C.js?v=a4ce5413:16222
+useLoader @ chunk-RPJNFG3C.js?v=a4ce5413:17536
+useFBX @ @react-three_drei.js?v=a4ce5413:93479
+FBXModel @ try-on.tsx:131
+renderWithHooks @ chunk-RPJNFG3C.js?v=a4ce5413:5896
+mountIndeterminateComponent @ chunk-RPJNFG3C.js?v=a4ce5413:9379
+beginWork @ chunk-RPJNFG3C.js?v=a4ce5413:10362
+beginWork$1 @ chunk-RPJNFG3C.js?v=a4ce5413:14192
+performUnitOfWork @ chunk-RPJNFG3C.js?v=a4ce5413:13668
+workLoopSync @ chunk-RPJNFG3C.js?v=a4ce5413:13608
+renderRootSync @ chunk-RPJNFG3C.js?v=a4ce5413:13587
+performConcurrentWorkOnRoot @ chunk-RPJNFG3C.js?v=a4ce5413:13119
+workLoop @ chunk-RPJNFG3C.js?v=a4ce5413:278
+flushWork @ chunk-RPJNFG3C.js?v=a4ce5413:257
+performWorkUntilDeadline @ chunk-RPJNFG3C.js?v=a4ce5413:465
+try-on.tsx:131 THREE.FBXLoader: AmbientColor map is not supported in three.js, skipping texture.
+(anonymous) @ @react-three_drei.js?v=a4ce5413:37040
+parseParameters @ @react-three_drei.js?v=a4ce5413:36976
+parseMaterial @ @react-three_drei.js?v=a4ce5413:36917
+parseMaterials @ @react-three_drei.js?v=a4ce5413:36898
+parse @ @react-three_drei.js?v=a4ce5413:36722
+parse @ @react-three_drei.js?v=a4ce5413:36710
+(anonymous) @ @react-three_drei.js?v=a4ce5413:36682
+(anonymous) @ chunk-OTHSB3H2.js?v=a4ce5413:25490
+Promise.then
+load @ chunk-OTHSB3H2.js?v=a4ce5413:25484
+load @ @react-three_drei.js?v=a4ce5413:36678
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:17528
+query @ chunk-RPJNFG3C.js?v=a4ce5413:16210
+suspend @ chunk-RPJNFG3C.js?v=a4ce5413:16222
+useLoader @ chunk-RPJNFG3C.js?v=a4ce5413:17536
+useFBX @ @react-three_drei.js?v=a4ce5413:93479
+FBXModel @ try-on.tsx:131
+renderWithHooks @ chunk-RPJNFG3C.js?v=a4ce5413:5896
+mountIndeterminateComponent @ chunk-RPJNFG3C.js?v=a4ce5413:9379
+beginWork @ chunk-RPJNFG3C.js?v=a4ce5413:10362
+beginWork$1 @ chunk-RPJNFG3C.js?v=a4ce5413:14192
+performUnitOfWork @ chunk-RPJNFG3C.js?v=a4ce5413:13668
+workLoopSync @ chunk-RPJNFG3C.js?v=a4ce5413:13608
+renderRootSync @ chunk-RPJNFG3C.js?v=a4ce5413:13587
+performConcurrentWorkOnRoot @ chunk-RPJNFG3C.js?v=a4ce5413:13119
+workLoop @ chunk-RPJNFG3C.js?v=a4ce5413:278
+flushWork @ chunk-RPJNFG3C.js?v=a4ce5413:257
+performWorkUntilDeadline @ chunk-RPJNFG3C.js?v=a4ce5413:465
+try-on.tsx:107 3D_TRYON: ModelContent loading URL: /t_shirt.fbx
+try-on.tsx:113 3D_TRYON: Using FBX path for /t_shirt.fbx
+try-on.tsx:130 3D_TRYON: FBXModel component mounting for /t_shirt.fbx
+try-on.tsx:316 3D_TRYON: Checking product {id: '6596a3f7-a944-4ecb-8920-210eac5cd272', hasModel: true, url: '/t_shirt.fbx'}
+try-on.tsx:135 3D_TRYON: FBX object details: {type: 'Group', uuid: '278c9652-837b-4980-a6dc-bfc1c420f523', name: '', children: Array(17), scale: _Vector3, …}
+try-on.tsx:145 3D_TRYON: FBX Mesh detailed: {name: 'StitchMatShape_130909', geometry: true, material: true, visible: true, opacity: 1, …}
+try-on.tsx:145 3D_TRYON: FBX Mesh detailed: {name: 'StitchMatShape_132157', geometry: true, material: true, visible: true, opacity: 1, …}
+try-on.tsx:145 3D_TRYON: FBX Mesh detailed: {name: 'StitchMatShape_128590', geometry: true, material: true, visible: true, opacity: 1, …}
+try-on.tsx:145 3D_TRYON: FBX Mesh detailed: {name: 'StitchMatShape_129132', geometry: true, material: true, visible: true, opacity: 1, …}
+try-on.tsx:145 3D_TRYON: FBX Mesh detailed: {name: 'StitchMatShape_130648', geometry: true, material: true, visible: true, opacity: 1, …}
+try-on.tsx:145 3D_TRYON: FBX Mesh detailed: {name: 'StitchMatShape_130377', geometry: true, material: true, visible: true, opacity: 1, …}
+try-on.tsx:145 3D_TRYON: FBX Mesh detailed: {name: '30', geometry: true, material: true, visible: true, opacity: undefined, …}
+chunk-RPJNFG3C.js?v=a4ce5413:10678 Uncaught TypeError: Cannot read properties of undefined (reading 'set')
+    at try-on.tsx:156:34
+    at Mesh.traverse (chunk-OTHSB3H2.js?v=a4ce5413:5095:5)
+    at Group.traverse (chunk-OTHSB3H2.js?v=a4ce5413:5098:19)
+    at try-on.tsx:143:11
+    at commitHookEffectListMount (chunk-RPJNFG3C.js?v=a4ce5413:10915:34)
+    at commitPassiveMountOnFiber (chunk-RPJNFG3C.js?v=a4ce5413:12223:19)
+    at commitPassiveMountEffects_complete (chunk-RPJNFG3C.js?v=a4ce5413:12195:17)
+    at commitPassiveMountEffects_begin (chunk-RPJNFG3C.js?v=a4ce5413:12185:15)
+    at commitPassiveMountEffects (chunk-RPJNFG3C.js?v=a4ce5413:12175:11)
+    at flushPassiveEffectsImpl (chunk-RPJNFG3C.js?v=a4ce5413:13943:11)
+(anonymous) @ try-on.tsx:156
+traverse @ chunk-OTHSB3H2.js?v=a4ce5413:5095
+traverse @ chunk-OTHSB3H2.js?v=a4ce5413:5098
+(anonymous) @ try-on.tsx:143
+commitHookEffectListMount @ chunk-RPJNFG3C.js?v=a4ce5413:10915
+commitPassiveMountOnFiber @ chunk-RPJNFG3C.js?v=a4ce5413:12223
+commitPassiveMountEffects_complete @ chunk-RPJNFG3C.js?v=a4ce5413:12195
+commitPassiveMountEffects_begin @ chunk-RPJNFG3C.js?v=a4ce5413:12185
+commitPassiveMountEffects @ chunk-RPJNFG3C.js?v=a4ce5413:12175
+flushPassiveEffectsImpl @ chunk-RPJNFG3C.js?v=a4ce5413:13943
+flushPassiveEffects @ chunk-RPJNFG3C.js?v=a4ce5413:13906
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:13797
+workLoop @ chunk-RPJNFG3C.js?v=a4ce5413:278
+flushWork @ chunk-RPJNFG3C.js?v=a4ce5413:257
+performWorkUntilDeadline @ chunk-RPJNFG3C.js?v=a4ce5413:465
+chunk-RPJNFG3C.js?v=a4ce5413:18163 The above error occurred in the <FBXModel> component:
+
+    at FBXModel (https://ca2e5b6a-18d7-4dc5-b497-f2c984b1a992-00-2x4wl5png1zhl.janeway.replit.dev/src/pages/try-on.tsx:162:21)
+    at ModelContent (https://ca2e5b6a-18d7-4dc5-b497-f2c984b1a992-00-2x4wl5png1zhl.janeway.replit.dev/src/pages/try-on.tsx:129:25)
+    at Suspense
+    at ModelOverlay (https://ca2e5b6a-18d7-4dc5-b497-f2c984b1a992-00-2x4wl5png1zhl.janeway.replit.dev/src/pages/try-on.tsx:244:25)
+    at Suspense
+    at ErrorBoundary (https://ca2e5b6a-18d7-4dc5-b497-f2c984b1a992-00-2x4wl5png1zhl.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-RPJNFG3C.js?v=a4ce5413:16546:5)
+    at FiberProvider (https://ca2e5b6a-18d7-4dc5-b497-f2c984b1a992-00-2x4wl5png1zhl.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-RPJNFG3C.js?v=a4ce5413:18166:21)
+    at Provider (https://ca2e5b6a-18d7-4dc5-b497-f2c984b1a992-00-2x4wl5png1zhl.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-RPJNFG3C.js?v=a4ce5413:17833:3)
+
+React will try to recreate this component tree from scratch using the error boundary you provided, ErrorBoundary.
+console.error @ chunk-RPJNFG3C.js?v=a4ce5413:18163
+logCapturedError @ chunk-RPJNFG3C.js?v=a4ce5413:7769
+callback @ chunk-RPJNFG3C.js?v=a4ce5413:7815
+callCallback @ chunk-RPJNFG3C.js?v=a4ce5413:3720
+commitUpdateQueue @ chunk-RPJNFG3C.js?v=a4ce5413:3737
+commitLayoutEffectOnFiber @ chunk-RPJNFG3C.js?v=a4ce5413:11070
+commitLayoutMountEffects_complete @ chunk-RPJNFG3C.js?v=a4ce5413:12044
+commitLayoutEffects_begin @ chunk-RPJNFG3C.js?v=a4ce5413:12033
+commitLayoutEffects @ chunk-RPJNFG3C.js?v=a4ce5413:11984
+commitRootImpl @ chunk-RPJNFG3C.js?v=a4ce5413:13822
+commitRoot @ chunk-RPJNFG3C.js?v=a4ce5413:13747
+performSyncWorkOnRoot @ chunk-RPJNFG3C.js?v=a4ce5413:13336
+flushSyncCallbacks @ chunk-RPJNFG3C.js?v=a4ce5413:2770
+flushPassiveEffectsImpl @ chunk-RPJNFG3C.js?v=a4ce5413:13959
+flushPassiveEffects @ chunk-RPJNFG3C.js?v=a4ce5413:13906
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:13797
+workLoop @ chunk-RPJNFG3C.js?v=a4ce5413:278
+flushWork @ chunk-RPJNFG3C.js?v=a4ce5413:257
+performWorkUntilDeadline @ chunk-RPJNFG3C.js?v=a4ce5413:465
+try-on.tsx:316 3D_TRYON: Checking product {id: '6596a3f7-a944-4ecb-8920-210eac5cd272', hasModel: true, url: '/t_shirt.fbx'}
+chunk-RPJNFG3C.js?v=a4ce5413:18431 Uncaught TypeError: Cannot read properties of undefined (reading 'set')
+    at try-on.tsx:156:34
+    at Mesh.traverse (chunk-OTHSB3H2.js?v=a4ce5413:5095:5)
+    at Group.traverse (chunk-OTHSB3H2.js?v=a4ce5413:5098:19)
+    at try-on.tsx:143:11
+    at commitHookEffectListMount (chunk-RPJNFG3C.js?v=a4ce5413:10915:34)
+    at commitPassiveMountOnFiber (chunk-RPJNFG3C.js?v=a4ce5413:12223:19)
+    at commitPassiveMountEffects_complete (chunk-RPJNFG3C.js?v=a4ce5413:12195:17)
+    at commitPassiveMountEffects_begin (chunk-RPJNFG3C.js?v=a4ce5413:12185:15)
+    at commitPassiveMountEffects (chunk-RPJNFG3C.js?v=a4ce5413:12175:11)
+    at flushPassiveEffectsImpl (chunk-RPJNFG3C.js?v=a4ce5413:13943:11)
+(anonymous) @ try-on.tsx:156
+traverse @ chunk-OTHSB3H2.js?v=a4ce5413:5095
+traverse @ chunk-OTHSB3H2.js?v=a4ce5413:5098
+(anonymous) @ try-on.tsx:143
+commitHookEffectListMount @ chunk-RPJNFG3C.js?v=a4ce5413:10915
+commitPassiveMountOnFiber @ chunk-RPJNFG3C.js?v=a4ce5413:12223
+commitPassiveMountEffects_complete @ chunk-RPJNFG3C.js?v=a4ce5413:12195
+commitPassiveMountEffects_begin @ chunk-RPJNFG3C.js?v=a4ce5413:12185
+commitPassiveMountEffects @ chunk-RPJNFG3C.js?v=a4ce5413:12175
+flushPassiveEffectsImpl @ chunk-RPJNFG3C.js?v=a4ce5413:13943
+flushPassiveEffects @ chunk-RPJNFG3C.js?v=a4ce5413:13906
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:13797
+workLoop @ chunk-RPJNFG3C.js?v=a4ce5413:278
+flushWork @ chunk-RPJNFG3C.js?v=a4ce5413:257
+performWorkUntilDeadline @ chunk-RPJNFG3C.js?v=a4ce5413:465
+try-on.tsx:316 3D_TRYON: Checking product {id: '6596a3f7-a944-4ecb-8920-210eac5cd272', hasModel: true, url: '/t_shirt.fbx'}
+chunk-RPJNFG3C.js?v=a4ce5413:18431 Uncaught TypeError: Cannot read properties of undefined (reading 'set')
+    at try-on.tsx:156:34
+    at Mesh.traverse (chunk-OTHSB3H2.js?v=a4ce5413:5095:5)
+    at Group.traverse (chunk-OTHSB3H2.js?v=a4ce5413:5098:19)
+    at try-on.tsx:143:11
+    at commitHookEffectListMount (chunk-RPJNFG3C.js?v=a4ce5413:10915:34)
+    at commitPassiveMountOnFiber (chunk-RPJNFG3C.js?v=a4ce5413:12223:19)
+    at commitPassiveMountEffects_complete (chunk-RPJNFG3C.js?v=a4ce5413:12195:17)
+    at commitPassiveMountEffects_begin (chunk-RPJNFG3C.js?v=a4ce5413:12185:15)
+    at commitPassiveMountEffects (chunk-RPJNFG3C.js?v=a4ce5413:12175:11)
+    at flushPassiveEffectsImpl (chunk-RPJNFG3C.js?v=a4ce5413:13943:11)
+(anonymous) @ try-on.tsx:156
+traverse @ chunk-OTHSB3H2.js?v=a4ce5413:5095
+traverse @ chunk-OTHSB3H2.js?v=a4ce5413:5098
+(anonymous) @ try-on.tsx:143
+commitHookEffectListMount @ chunk-RPJNFG3C.js?v=a4ce5413:10915
+commitPassiveMountOnFiber @ chunk-RPJNFG3C.js?v=a4ce5413:12223
+commitPassiveMountEffects_complete @ chunk-RPJNFG3C.js?v=a4ce5413:12195
+commitPassiveMountEffects_begin @ chunk-RPJNFG3C.js?v=a4ce5413:12185
+commitPassiveMountEffects @ chunk-RPJNFG3C.js?v=a4ce5413:12175
+flushPassiveEffectsImpl @ chunk-RPJNFG3C.js?v=a4ce5413:13943
+flushPassiveEffects @ chunk-RPJNFG3C.js?v=a4ce5413:13906
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:13797
+workLoop @ chunk-RPJNFG3C.js?v=a4ce5413:278
+flushWork @ chunk-RPJNFG3C.js?v=a4ce5413:257
+performWorkUntilDeadline @ chunk-RPJNFG3C.js?v=a4ce5413:465
+chunk-RPJNFG3C.js?v=a4ce5413:18163 The above error occurred in the <ForwardRef(Canvas)> component:
+
+    at Canvas (https://ca2e5b6a-18d7-4dc5-b497-f2c984b1a992-00-2x4wl5png1zhl.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-RPJNFG3C.js?v=a4ce5413:18391:3)
+    at FiberProvider (https://ca2e5b6a-18d7-4dc5-b497-f2c984b1a992-00-2x4wl5png1zhl.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-RPJNFG3C.js?v=a4ce5413:18166:21)
+    at CanvasWrapper
+    at div
+    at div
+    at div
+    at div
+    at div
+    at TryOnPage (https://ca2e5b6a-18d7-4dc5-b497-f2c984b1a992-00-2x4wl5png1zhl.janeway.replit.dev/src/pages/try-on.tsx:267:24)
+    at Route (https://ca2e5b6a-18d7-4dc5-b497-f2c984b1a992-00-2x4wl5png1zhl.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=a4ce5413:191:16)
+    at Switch (https://ca2e5b6a-18d7-4dc5-b497-f2c984b1a992-00-2x4wl5png1zhl.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=a4ce5413:247:17)
+    at Router
+    at main
+    at div
+    at Provider (https://ca2e5b6a-18d7-4dc5-b497-f2c984b1a992-00-2x4wl5png1zhl.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-P23V4H6I.js?v=a4ce5413:48:15)
+    at TooltipProvider (https://ca2e5b6a-18d7-4dc5-b497-f2c984b1a992-00-2x4wl5png1zhl.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-tooltip.js?v=a4ce5413:61:5)
+    at CartProvider (https://ca2e5b6a-18d7-4dc5-b497-f2c984b1a992-00-2x4wl5png1zhl.janeway.replit.dev/src/hooks/use-cart.tsx:20:32)
+    at ThemeProvider (https://ca2e5b6a-18d7-4dc5-b497-f2c984b1a992-00-2x4wl5png1zhl.janeway.replit.dev/src/components/theme-provider.tsx:25:3)
+    at QueryClientProvider (https://ca2e5b6a-18d7-4dc5-b497-f2c984b1a992-00-2x4wl5png1zhl.janeway.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=a4ce5413:2805:3)
+    at App
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+console.error @ chunk-RPJNFG3C.js?v=a4ce5413:18163
+logCapturedError @ chunk-RPCDYKBN.js?v=a4ce5413:14032
+update.callback @ chunk-RPCDYKBN.js?v=a4ce5413:14052
+callCallback @ chunk-RPCDYKBN.js?v=a4ce5413:11248
+commitUpdateQueue @ chunk-RPCDYKBN.js?v=a4ce5413:11265
+commitLayoutEffectOnFiber @ chunk-RPCDYKBN.js?v=a4ce5413:17093
+commitLayoutMountEffects_complete @ chunk-RPCDYKBN.js?v=a4ce5413:17980
+commitLayoutEffects_begin @ chunk-RPCDYKBN.js?v=a4ce5413:17969
+commitLayoutEffects @ chunk-RPCDYKBN.js?v=a4ce5413:17920
+commitRootImpl @ chunk-RPCDYKBN.js?v=a4ce5413:19353
+commitRoot @ chunk-RPCDYKBN.js?v=a4ce5413:19277
+finishConcurrentRender @ chunk-RPCDYKBN.js?v=a4ce5413:18760
+performConcurrentWorkOnRoot @ chunk-RPCDYKBN.js?v=a4ce5413:18718
+workLoop @ chunk-RPCDYKBN.js?v=a4ce5413:197
+flushWork @ chunk-RPCDYKBN.js?v=a4ce5413:176
+performWorkUntilDeadline @ chunk-RPCDYKBN.js?v=a4ce5413:384
+chunk-RPCDYKBN.js?v=a4ce5413:19413 Uncaught TypeError: Cannot read properties of undefined (reading 'set')
+    at try-on.tsx:156:34
+    at Mesh.traverse (chunk-OTHSB3H2.js?v=a4ce5413:5095:5)
+    at Group.traverse (chunk-OTHSB3H2.js?v=a4ce5413:5098:19)
+    at try-on.tsx:143:11
+    at commitHookEffectListMount (chunk-RPJNFG3C.js?v=a4ce5413:10915:34)
+    at commitPassiveMountOnFiber (chunk-RPJNFG3C.js?v=a4ce5413:12223:19)
+    at commitPassiveMountEffects_complete (chunk-RPJNFG3C.js?v=a4ce5413:12195:17)
+    at commitPassiveMountEffects_begin (chunk-RPJNFG3C.js?v=a4ce5413:12185:15)
+    at commitPassiveMountEffects (chunk-RPJNFG3C.js?v=a4ce5413:12175:11)
+    at flushPassiveEffectsImpl (chunk-RPJNFG3C.js?v=a4ce5413:13943:11)
+(anonymous) @ try-on.tsx:156
+traverse @ chunk-OTHSB3H2.js?v=a4ce5413:5095
+traverse @ chunk-OTHSB3H2.js?v=a4ce5413:5098
+(anonymous) @ try-on.tsx:143
+commitHookEffectListMount @ chunk-RPJNFG3C.js?v=a4ce5413:10915
+commitPassiveMountOnFiber @ chunk-RPJNFG3C.js?v=a4ce5413:12223
+commitPassiveMountEffects_complete @ chunk-RPJNFG3C.js?v=a4ce5413:12195
+commitPassiveMountEffects_begin @ chunk-RPJNFG3C.js?v=a4ce5413:12185
+commitPassiveMountEffects @ chunk-RPJNFG3C.js?v=a4ce5413:12175
+flushPassiveEffectsImpl @ chunk-RPJNFG3C.js?v=a4ce5413:13943
+flushPassiveEffects @ chunk-RPJNFG3C.js?v=a4ce5413:13906
+(anonymous) @ chunk-RPJNFG3C.js?v=a4ce5413:13797
+workLoop @ chunk-RPJNFG3C.js?v=a4ce5413:278
+flushWork @ chunk-RPJNFG3C.js?v=a4ce5413:257
+performWorkUntilDeadline @ chunk-RPJNFG3C.js?v=a4ce5413:465
+chunk-OTHSB3H2.js?v=a4ce5413:17501 THREE.WebGLRenderer: Context Lost.

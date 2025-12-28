@@ -153,8 +153,10 @@ function FBXModel({ url, color }: { url: string; color?: string | null }) {
           if (child.material) {
             child.material.transparent = false;
             child.material.opacity = 1;
-            child.material.color.set(0xffffff); // Force visibility
-            if (color) child.material.color.set(color);
+            if (child.material.color) {
+              child.material.color.set(0xffffff); // Force visibility
+              if (color) child.material.color.set(color);
+            }
             child.material.needsUpdate = true;
           }
         }
