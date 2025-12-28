@@ -36,63 +36,32 @@ function CameraController() {
   return null;
 }
 
-function ModelOverlay({ url, color }: { url: string; color?: string | null }) {
-  console.log("3D_TRYON: ModelOverlay mounted", { url, color });
+function ModelContent({ url, color }: { url: string; color?: string | null }) {
   const gltf = useGLTF(url);
-  console.log("3D_TRYON: useGLTF result", { hasScene: !!gltf?.scene, gltf });
-  const groupRef = React.useRef<THREE.Group>(null);
-  const clonedSceneRef = React.useRef<THREE.Group | null>(null);
+  console.log("3D_TRYON: GLTF loaded", { url, nodes: Object.keys(gltf.nodes || {}) });
   
   useEffect(() => {
-    if (gltf?.scene) {
-      console.log("3D_TRYON: Model loaded in Overlay Group", gltf.scene);
-      
-      // Clone the scene to avoid issues with reusing the same object
-      const clonedScene = gltf.scene.clone();
-      clonedSceneRef.current = clonedScene as THREE.Group;
-      
-      clonedScene.traverse((child) => {
-        if ((child as any).isMesh) {
-          const mesh = child as any;
-          if (mesh.material) {
-            // Clone material to avoid sharing material between instances
-            const oldMaterial = mesh.material;
-            if (Array.isArray(oldMaterial)) {
-              mesh.material = oldMaterial.map((m: any) => m.clone());
-            } else {
-              mesh.material = oldMaterial.clone();
-            }
-            
-            if (color) {
-              mesh.material.color.set(color);
-            }
-            mesh.material.transparent = false;
-            mesh.material.opacity = 1;
-            mesh.material.side = THREE.DoubleSide;
-            mesh.material.needsUpdate = true;
-            mesh.castShadow = true;
-            mesh.receiveShadow = true;
-          }
-        }
-      });
-      
-      // Center the model using bounding box
-      const box = new THREE.Box3().setFromObject(clonedScene);
-      const center = box.getCenter(new THREE.Vector3());
-      clonedScene.position.sub(center);
-      
-      console.log("3D_TRYON: Model cloned and centered", { center });
-    }
-  }, [gltf, color]);
-
-  if (!clonedSceneRef.current) {
-    return <Html center><div className="text-white bg-black p-2">Loading 3D Model...</div></Html>;
-  }
+    Object.values(gltf.nodes || {}).forEach((node: any) => {
+      if (node?.isMesh && node.material) {
+        if (color) node.material.color.set(color);
+        node.material.side = THREE.DoubleSide;
+        node.material.needsUpdate = true;
+      }
+    });
+  }, [gltf.nodes, color]);
 
   return (
-    <group ref={groupRef} scale={2.0} position={[0, 0, 0]}>
-      <primitive object={clonedSceneRef.current} />
+    <group scale={1.8} position={[0, -0.3, 0]}>
+      <primitive object={gltf.scene} />
     </group>
+  );
+}
+
+function ModelOverlay({ url, color }: { url: string; color?: string | null }) {
+  return (
+    <Suspense fallback={<Html center><div className="text-white bg-black p-2">Loading Model...</div></Html>}>
+      <ModelContent url={url} color={color} />
+    </Suspense>
   );
 }
 
